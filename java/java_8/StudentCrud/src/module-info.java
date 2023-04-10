@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author dorustree
+ *
+ */
+module sampleProject {
+}

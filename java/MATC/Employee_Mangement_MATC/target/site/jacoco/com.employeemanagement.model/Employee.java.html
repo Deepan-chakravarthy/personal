@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Employee.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Employee_Mangement_MATC</a> &gt; <a href="index.source.html" class="el_package">com.employeemanagement.model</a> &gt; <span class="el_source">Employee.java</span></div><h1>Employee.java</h1><pre class="source lang-java linenums">package com.employeemanagement.model;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+
+import com.employeemanagement.customdatatypes.Designation;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+<span class="pc bnc" id="L28" title="All 86 branches missed.">@Data</span>
+@Entity
+<span class="fc" id="L30">@NoArgsConstructor</span>
+<span class="fc" id="L31">@AllArgsConstructor</span>
+@Table(name = &quot;employee&quot;)
+public class Employee {
+
+	@Id
+	@GeneratedValue(generator = &quot;uuid2&quot;)
+	@GenericGenerator(name = &quot;uuid2&quot;, strategy = &quot;uuid2&quot;)
+<span class="fc" id="L38">	private String id;</span>
+	
+	@Column(unique = true , nullable = false)
+<span class="fc" id="L41">	private String number;</span>
+	
+	@Column(unique = true)
+<span class="fc" id="L44">	private String email;</span>
+	
+	@Enumerated(EnumType.STRING)
+<span class="fc" id="L47">	private Designation designation;</span>
+	
+<span class="fc" id="L49">	private LocalDate joiningDate;</span>
+	
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+<span class="fc" id="L52">    private Person person;</span>
+    
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@JoinColumn(name = &quot;employee_id&quot; , referencedColumnName = &quot;id&quot;)
+<span class="fc" id="L56">    private List&lt;Address&gt; address;</span>
+	
+<span class="fc" id="L58">	private LocalDateTime createdDate = LocalDateTime.now();</span>
+	
+<span class="fc" id="L60">	private LocalDateTime updatedDate;</span>
+    
+<span class="fc" id="L62">	private String createdBy = &quot;system&quot;;</span>
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

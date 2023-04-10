@@ -1,0 +1,67 @@
+{"properties": [
+  {
+    "name": "hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds",
+    "type": "java.lang.String",
+    "description": "A description for 'hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds'"
+  },
+  {
+    "name": "hystrix.command.default.circuitBreaker.requestVolumeThreshold",
+    "type": "java.lang.String",
+    "description": "A description for 'hystrix.command.default.circuitBreaker.requestVolumeThreshold'"
+  },
+  {
+    "name": "hystrix.command.default.circuitBreaker.errorThresholdPercentage",
+    "type": "java.lang.String",
+    "description": "A description for 'hystrix.command.default.circuitBreaker.errorThresholdPercentage'"
+  },
+  {
+    "name": "hystrix.command.default.circuitBreaker.sleepWindowInMilliseconds",
+    "type": "java.lang.String",
+    "description": "A description for 'hystrix.command.default.circuitBreaker.sleepWindowInMilliseconds'"
+  },
+  {
+    "name": "hystrix.command.default.fallback.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'hystrix.command.default.fallback.enabled'"
+  },
+  {
+    "name": "spring.hystrix.dashboard.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.hystrix.dashboard.enabled'"
+  },
+  {
+    "name": "hystrix.command.default.circuitBreaker.errorThresholdPercentage",
+    "type": "java.lang.String",
+    "description": "A description for 'hystrix.command.default.circuitBreaker.errorThresholdPercentage'"
+  },
+  {
+    "name": "hystrix.command.default.circuitBreaker.errorThresholdPercentage",
+    "type": "java.lang.String",
+    "description": "A description for 'hystrix.command.default.circuitBreaker.errorThresholdPercentage'"
+  },
+  {
+    "name": "hystrix.command.default.circuitBreaker.errorThresholdPercentage",
+    "type": "java.lang.String",
+    "description": "A description for 'hystrix.command.default.circuitBreaker.errorThresholdPercentage'"
+  },
+  {
+    "name": "hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds",
+    "type": "java.lang.String",
+    "description": "A description for 'hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds'"
+  },
+  {
+    "name": "hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds",
+    "type": "java.lang.String",
+    "description": "A description for 'hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds'"
+  },
+  {
+    "name": "eureka.client.instance.preferIpAddress",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.client.instance.preferIpAddress'"
+  },
+  {
+    "name": "springdoc.api-docs.path",
+    "type": "java.lang.String",
+    "description": "A description for 'springdoc.api-docs.path'"
+  }
+]}
