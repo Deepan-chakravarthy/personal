@@ -1,0 +1,54 @@
+.login{
+
+    /* background-color: lightblue; */
+    background: url("../../assets/cover.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-top: 0%;
+    padding-top: 10px;
+    color: aqua;
+}
+.form{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 20px;
+    height: 40vh;
+    width: 30vw;
+    color: white;
+}
+.login-form{
+    display: flex;
+    justify-content: center;
+}
+td{
+    text-align: right;
+}
+input{
+    height: 1.5em;
+    border-radius: 5px;
+    border: none;
+    margin: 5%;
+}
+button{
+    margin: 1.5em;
+    border: none;
+    border-radius: 5px;
+    height: 2.5em;
+    width: 5em;
+    color: white;
+}
+.login-btn{
+    background-color: green ;
+}
+.signup-btn{
+    background-color: red;
+}
+/* @media screen and (min-width: 600px) {
+    .form{height: 55%;
+        width: 30%;}
+} */

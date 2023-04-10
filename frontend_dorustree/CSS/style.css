@@ -1,0 +1,33 @@
+body{
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color:white;
+
+}
+
+.login{
+    background-color: lightblue;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 13%;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+h2{
+    margin:0;
+    padding-top: 4%;
+}
+form{
+    padding: 2%;
+}
+.text{
+    width: 50%;
+}
+button>a{
+    text-decoration: none;
+    color: black;
+}
