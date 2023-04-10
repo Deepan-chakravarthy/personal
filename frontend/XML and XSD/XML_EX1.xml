@@ -1,0 +1,14 @@
+<Students>
+	<student section='A'>
+		<male>29</male>
+		<female>20</female>
+	</student>
+	<student section='B'>
+		<male>30</male>
+		<female>20</female>
+	</student>
+	<student section='C'>
+		<male>20</male>
+		<female>20</female>
+	</student>
+</students>

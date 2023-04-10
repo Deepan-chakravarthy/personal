@@ -1,0 +1,68 @@
+body {
+ 
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(32, 64, 192, 0.7));
+  padding: 0.1px;
+  padding-top:0.1px;
+}
+.header{
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(32, 64, 192, 0.7)),url(https://miro.medium.com/max/1000/1*FEcr9_owB5KplrClDpRenA.png);
+  padding-top: 5px;
+      background-size: cover; 
+      background-attachment: fixed; 
+      background-position: center;
+      opacity: 100%;
+      min-height: 100vh;
+      width: 100%;
+    }
+
+.h1{
+    color: #7fff00;
+    text-align: center;
+    font-style: oblique;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.selections {
+  display:flex;
+  justify-content: center;
+}
+
+.selection {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 100px;
+  transition: 100ms;
+}
+
+.selection:hover {
+  transform: scale(1.2);
+}
+
+.results {
+  margin-top: 1rem;
+  font-size: 32px;
+  color:  #7fff00;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.result-score {
+  margin-left: 5px;
+  font-size: px32;
+  color: rgb(255, 0, 0);
+}
+
+.result-selection {
+  opacity: .5;
+  font-size: 180px;
+
+}
+
+.result-selection.winner {
+  opacity: 1;
+  font-size: 180px;
+}

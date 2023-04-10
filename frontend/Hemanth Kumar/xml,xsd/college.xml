@@ -1,0 +1,37 @@
+<university>
+   <college one='sacred_heart'>
+   <strength>5000</strength>
+   <boys>2500</boys>
+   <girls>2500</girls>
+   </college>
+   
+   <college two='iit'>
+   <strength>4000</strength>
+   <boys>2000</boys>
+   <girls>2000</girls>
+   </college>
+   
+   
+    <college three='vit'>
+	<strength>3000</strength>
+	<boys>1500</boys>
+	<girls>1500</girls>
+	</college>
+	
+	
+	<college four='nit'>
+	<strength>2000</strength>
+	<boys>1000</boys>
+	<girls>1000</girls>
+	</college>
+	
+	
+	<college five='kmg'>
+	<strength>1000</strength>
+	<boys>500</boys>
+	<girls>500</girls>
+	</college>
+	
+	
+	
+ 

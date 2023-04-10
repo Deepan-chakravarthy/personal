@@ -1,0 +1,24 @@
+<?xml-stylesheet type = "text/xsl" href = "farmer.xsl"?>
+<farmer>
+    <farmer cultivate="paddy">
+	    <name>raja</name>
+		<acre>one</acre>
+		<season>rabi</season>
+		<qintal>5</qintal>
+        <price>	66000</price>
+	</farmer>	
+	<farmer cultivate="banana">
+        <name>ram</name>
+		<acre>five</acre>
+		<season>kharif</season>
+        <qintal>25</qintal>
+		<price>250000	</price>
+    </farmer>
+	<farmer cultivate="wheat">
+	    <name>hari</name>
+		<acre>six</acre>
+		<season>kharif</season>
+		<qintal>150000</qintal>
+		<price>	66000</price>
+	</farmer>	
+</farmer>	

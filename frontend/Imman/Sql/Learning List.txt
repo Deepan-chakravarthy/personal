@@ -1,0 +1,11 @@
+xml
+xsd
+mysql database
+html
+css
+bootstrap
+javascript
+jquery (optional)
+react
+redux
+java

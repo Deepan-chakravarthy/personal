@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  font-size: 1.5cm;
+}
+h2 {
+  font-size: 1cm;
+}
+body {
+  background-image: url(https://pressstart.vip/images/uploads/assets/bluemoon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#Rock_Paper_Scissor {
+  text-align: center;
+}
+
+/* 
+#display, {
+  width: 10rem;
+} */
+.Score-Board {
+  width: fit-content;
+}
+.res {
+  margin: 7px;
+  padding: 10px;
+  font-size: 15px;
+}
+.result {
+  font-size: 3rem;
+}
+label {
+  font-size: 2em;
+  display: inline-block;
+  width: 300px;
+}
+.set-1{
+  display:flex;
+  justify-content: center;
+}
+.btn {
+  width: 150px;
+  height: 150px;
+  font-size: 2.5cm;
+  margin: 17px;
+}
+.bigbtn{
+  height:5rem;
+  width: 15rem;
+  background-color: transparent;
+  border: 4px solid white;
+  font-size: 2em;
+  border-radius: 15px;
+}
+.start{
+  margin-top: 30vh;
+  margin-bottom: 20vh;
+  text-align: center;
+}
+#start_heading{
+  margin-bottom: 10vh;
+}
+a { 
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.btn:focus {
+  background-color: red;
+}
+
+.com_div {
+  align-items: center;
+}

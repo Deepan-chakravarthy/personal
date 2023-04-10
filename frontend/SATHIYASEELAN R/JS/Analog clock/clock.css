@@ -1,0 +1,186 @@
+
+body {
+  background: #091921;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+#clock { 
+  margin-top: 10%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px -15px 15px rgba(255,255,255,0.06),
+              inset 0px -15px 15px rgba(255,255,255,0.06),
+              0 15px 15px rgba(0,0,0,0.3),
+              inset 0 15px 15px rgba(0,0,0,0.3);
+  border: 30px solid #091921;
+  position: relative;
+}
+#clock:before { 
+  content: '';
+  border-radius: 50%;
+  box-shadow: 0px -15px 15px rgba(255,255,255,0.06),
+              inset 0px -15px 15px rgba(255,255,255,0.06),
+              0 15px 15px rgba(0,0,0,0.3),
+              inset 0 15px 15px rgba(0,0,0,0.3);
+  border: 40px solid #091921;
+  position: absolute;
+  top:-2px;
+  bottom:-2px;
+  left:-2px;
+  right:-2px;
+  z-index: -1;
+}
+#clock:after { 
+  content: '';
+  border-radius: 50%;
+  box-shadow: inset 0px -25px 25px rgba(0,0,0,0.6),inset 0 25px 25px rgba(0,0,0,0.5);
+  border: 40px solid #091921;
+  position: absolute;
+  background-color: #89ff00;
+  top:-1px;
+  bottom:-1px;
+  left:-1px;
+  right:-1px;
+  z-index: -2;
+  
+}
+#clock:after {
+  background: linear-gradient(235deg,#89ff00);
+}
+
+#secondbar {
+  left:44%;
+  bottom:50%;
+  height:3px;
+  width: 125px;
+  position:absolute;
+  background-color: rgb(70,55,255);
+  transform-origin:20px;
+  border-radius: 40%;
+  
+
+}
+
+#minutebar {
+  left:44%;
+  bottom:50%;
+  height:3px;
+  position: absolute;
+  width: 90px;
+  background-color: rgb(253,120,227);
+  transform-origin: 20px;
+  border-radius: 40%;
+}
+
+#hourbar {
+  left:44%;
+  bottom:50%;
+  height:3px;
+  position: absolute;
+  width: 70px;
+  background-color: rgb(205,112,25);
+  transform-origin: 20px;
+  border-radius: 40%;
+
+}
+
+#center{
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+    box-shadow: inset -5px -5px 12px rgba(255, 255, 255, 0.5),
+     5px 5px 12px rgba(0,0,0,.50);
+  position: absolute;
+  left:49%;
+  bottom:49%;}
+
+.hour{
+  color:#89ff00;
+  position:absolute;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  
+  height: 100%;
+  width: 100%;
+}
+
+
+.hour1 { transform:rotate(30deg);} 
+.hour1 div { transform:rotate(-30deg);}   
+.hour2 {transform:rotate(60deg); }
+.hour2 div {transform:rotate(300deg); }
+.hour3 {transform:rotate(90deg) }
+.hour3 div{transform:rotate(-90deg) }
+.hour4 { transform:rotate(120deg) }
+.hour4 div{ transform:rotate(240deg) }
+.hour5 { transform:rotate(150deg) }
+.hour5 div{ transform:rotate(-150deg) }
+.hour6 { transform:rotate(180deg) }
+.hour6 div { transform:rotate(-180deg) }
+.hour7 { transform:rotate(210deg) }
+.hour7 div{ transform:rotate(-210deg) }
+.hour8 { transform:rotate(240deg) }
+.hour8 div{ transform:rotate(-240deg) }
+.hour9 { transform:rotate(270deg) }
+.hour9 div { transform:rotate(-270deg) }
+.hour10 { transform:rotate(300deg) }
+.hour10 div{ transform:rotate(-300deg) }
+.hour11 { transform:rotate(330deg) }
+.hour11 div{ transform:rotate(-330deg) }
+
+/* if want the custom clock hand undo the comments */
+/* 
+.girl{
+  width:50px;
+  height:15vh;
+  transform: rotate(90deg);
+  padding-bottom: -80%;
+  margin-right: -60%;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: -33%;
+
+}
+
+.boy{
+  width:70px;
+  height:15vh;
+  transform: rotate(90deg);
+  padding-bottom: -80%;
+  margin-right: -60%;
+  position: absolute;
+  margin-left: 27%;
+  margin-top: -26%;
+  position: sticky;
+
+}
+.sec{
+  width:50px;
+  height:28vh;
+  transform: rotate(90deg);
+  padding-bottom: -80%;
+  margin-right: -60%;
+  position: absolute;
+  margin-left: 40%;
+  margin-top: -42%;
+  position: sticky;
+
+}
+.heart{
+  width:20px;
+  height:5vh;
+  transform: rotate(0deg);
+  padding-bottom: -50%;
+  padding-left: -50%;
+  margin-right: -50%;
+  position: absolute;
+  margin-left: -40%;
+  margin-top: -40%;
+  position: sticky;
+
+}
+ */

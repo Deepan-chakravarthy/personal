@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <style type="test/css">
+      body {
+        margin: 30px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <section class="ex">
+      <div class="row">
+        <div class="pair-row">
+          <h1>Multiply And Division</h1>
+          <h2>1st Number:</h2>
+          <input type="text" id="firstNumber" />
+          <h2>2nd Number:</h2>
+          <input type="text" id="secondNumber" /><br /><br />
+          <input type="button" onclick="multiplyBy()" value="Multiply" />
+          <input type="button" onclick="divideBy()" value="Divide" />
+          <p>
+            The result is :<br />
+
+            <input type="text" id="result" />
+          </p>
+        </div>
+        <!-- String reverse order -->
+
+        <div class="pair-row">
+          <h1> String Reverse Order </h1>
+          <h2>Enter a string :</h2>
+          <input type="text" id="word" /><br />
+          <br />
+          <input type="button" onclick="reverse_word()" value="Reverse" /><br />
+          <br />
+          <input type="text" id="reverse" />
+        </div>
+      </div>
+    </section>
+    <!-- Vowels Count -->
+    <section class="ex">
+      <div class="row">
+        <div class="pair-row">
+
+          <h1>Vowels Count</h1>
+          <h2>Enter a Sentence :</h2>
+          <input type="text" id="vow" /><br />
+          <br />
+          <input type="button" onclick="vowel_count()" value="Count" /> <br />
+          <br />
+          <input type="text" id="vowel" />
+        </div>
+        <div class="pair-row">
+          <h1> Christmas Date Count</h1>
+          <input type="button" onclick="christmas()" value="Calculate" /> <br /><br />
+          <input type="text" id="date" width="20px" height="20px"/>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

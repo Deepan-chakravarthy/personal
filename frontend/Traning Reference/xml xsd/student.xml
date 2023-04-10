@@ -1,0 +1,12 @@
+<students section='A'>
+	<student category='jungle'>
+		<name type='firstname'>lion</name>
+		<age>2</age>
+		<email>lion@gmail.com</email>
+	</student>
+	<student category='jungle'>
+		<name>tiger</name>
+		<age>3</age>
+		<email>tiger@gmail.com</email>
+	</student>
+</students>

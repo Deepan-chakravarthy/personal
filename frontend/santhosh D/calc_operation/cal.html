@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<t>, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <style>
+            .container{
+                align-items: center;
+                text-align: center;
+                margin-top: 10vh;
+                background-color:rgb(0, 0, 0);
+                margin-right: 560px;
+                margin-left: 560px;
+                transform:none;
+            }
+            
+            .button{
+                padding: 20px;
+                margin: 10px;
+                font-size: larger;
+            
+            }
+            .button:hover{
+                cursor: pointer;
+                 box-shadow:0px 0px 5px 4px rgb(123, 121, 121) ;
+            }
+            .h1{
+                text-align: center;
+                align-items: center;
+                font-size: xx-large;
+                font-family: 'Rubik Dirt', cursive;
+                
+            
+            }
+            .button1{
+                padding: 20px;
+                margin: 10px;
+                font-size: larger;
+                text-align: end;
+            }
+            .button1:hover{
+                cursor: pointer;
+                 box-shadow:0px 0px 5px 4px rgb(123, 121, 121) ;
+            }
+            body
+                {   margin: 0%;
+                    padding: 0%;
+                    background-image: url(https://i.pinimg.com/originals/f9/f1/1d/f9f11d9b939f045ae236121cff71040b.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    /* background: linear-gradient(blue,red,green); */
+                
+                }           
+        </style>
+    <title>sandy</title>
+</head>
+<body>
+    
+    <div class="container"> 
+        <h1 style="color: gold;">Calculator<i class="bi bi-calculator-fill"></i></h1> 
+        <input class="button1" type="text" size="30px" id="inputtext" placeholder="Enter the values"><br>     
+        <button onclick="sandy(1)" class="button">1</button>
+        <button onclick="sandy(2)" class="button">2</button>
+        <button onclick="sandy(3)" class="button">3</button>
+        <button onclick="sandy(4)" class="button">4</button><br>
+        <button onclick="sandy(5)" class="button">5</button>
+        <button onclick="sandy(6)" class="button">6</button>
+        <button onclick="sandy(7)" class="button">7</button>
+        <button onclick="sandy(8)" class="button">8</button><br>
+        <button onclick="sandy(9)" class="button">9</button>
+        <button onclick="sandy(0)" class="button">0</button>
+        <button onclick="sandy('+')" class="button">+</button>
+        <button onclick="sandy('-')" class="button">-</button><br>
+        <button onclick="sandy('*')" class="button">*</button>
+        <button onclick="sandy('%')" class="button">%</button>
+        <button onclick="sandy('/')" class="button">/</button>
+        <button onclick="Result('=')" class="button" id="myBtn">=</button><br>
+        <button onclick="del()" class="button" style="background-color: rgb(197, 197, 128);"><i class="bi bi-arrow-left"></i> Back</button>
+        <button style="background-color: rgb(255, 165, 95);" onclick="clr()" class="button"><i class="bi bi-trash3"></i> Clear</button>
+    </div>
+        <script type="text/javascript">
+             
+            let result =  document.getElementById("inputtext");
+            let Result=()=>{
+                
+             try{
+                result.value=eval(result.value);
+             }
+             catch(err){
+                document.getElementById("inputtext").value="Error";
+                //alert("Enter the valid input!..")
+             }
+            }
+
+            let sandy=(number)=>{
+                result.value+=number;
+            }
+             function clr(){
+                result.value=" ";
+             }
+            function del(){
+                result.value=result.value.slice(0,-1);
+            } 
+//              try to enter operation
+//             var button = document.getElementById("inputtext");
+//             input.addEventListener("keypress", function(event) {
+//             if (event.key === "Enter") {
+//             event.preventDefault();
+//             document.getElementById("myBtn").click();
+//   }
+// });
+        </script>
+    
+    </body>
+</html>

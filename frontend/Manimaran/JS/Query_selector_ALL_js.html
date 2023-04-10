@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="one"> hi I AM MANIMARAN</h1>
+    <h1 class="two"> hi I AM MANIMARAN</h1>
+    <h1 class="one"> hi I AM MANIMARAN</h1>
+    <h1 class="two"> hi I AM MANIMARAN</h1>
+    <button >Click Me</button>
+<script>
+    // var btn1=document.querySelector("button");
+    // btn1.onclick=function(){
+    //     var x=document.querySelectorAll(".one");
+    //     x[0].style.backgroundColor="blue";
+    //     x[1].style.backgroundColor="blue";
+       
+    // }
+
+   
+        
+    
+    var btn = document.querySelector('button')
+        btn.onclick = function (){
+            function blue(){
+            var x = document.querySelectorAll(".one");
+            x[0].style.backgroundColor="blue";
+            x[1].style.backgroundColor="green";
+            
+        }
+        blue();
+        function rose(){
+            var y = document.querySelectorAll(".two");
+            y[0].style.backgroundColor="orange";
+            y[1].style.backgroundColor="red";
+        }
+        rose();
+    }
+
+    </script>
+
+</body>
+</html>

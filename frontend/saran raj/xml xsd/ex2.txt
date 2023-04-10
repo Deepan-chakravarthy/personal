@@ -1,0 +1,45 @@
+create schema pupils;
+use pupils;
+create table students (id int,name varchar(20),age int,email varchar(20),mobile_number varchar(20),street varchar(20),area varchar(20),
+city varchar(20),district varchar(20),state varchar(20),pin_code int,college_name varchar(20),
+college_code varchar(20),university varchar(20),semester int,tamil int,english int,
+physics int,chemistry int,biology int,college_door_number int,college_street varchar(20),
+college_area varchar(20),college_city varchar(20),college_district varchar(20),
+college_pincode varchar(20),college_state varchar(20),passed_out int);
+insert into students 
+(id,name,age,email,mobile_number,street,area,city,district,state,pin_code,college_name,college_code,university,semester,tamil,english,physics,chemistry,biology,college_door_number,
+college_street,college_area,college_city,college_district,college_state,college_pincode,passed_out)value 
+(1,'naruto',22,'naruto@gmail.com',2586486317,'murugan','dharusuram','kumbakonam','thanjavur','tamil_nadu',612708,'mens',004,'bharathidasan',1,85,86,95,94,96,560,
+'velan','kumaran','yerkadu','thanjavur','tamilnadu',58612,2017),
+(2,'boruto',18,'boruto@gmail.com',2586488617,'vel','dharapuram','pateal','mumbai','maharasata',612796,'setji',009,'kirubal',1,88,66,55,44,76,506,
+'nethaji','koli','kulvalur','mumbai','maharasta',58617,2018),
+(3,'sharadh',19,'sharadha@gmail.com',3686486317,'pachayapa','daravuram','patukotai','namakal','tamil_nadu',612728,'rajalakshmi',104,'anamalai',1,45,44,43,42,41,150,
+'janakai','kongu_nadu','eranvencheri','namakal','tamilnadu',59612,2017),
+(4,'narmadha',17,'narmadhaa@gmail.com',1686486317,'dolapur','dandiyapuram','pitvalaa','varanasi','uttar_pradesh',586528,'vvt',184,'lalvigar',1,36,37,38,39,56,750,
+'adiesh','madava','mandavada','varanasi','uttar_pradesh',59612,2017),
+(5,'palavi',24,'palavia@gmail.com',9686486317,'gurukvadi','kurukampati','kachivada','amethi','jammu & cashimir',212728,'jammal',726,'vikarama',1,91,90,89,88,87,140,
+'veermathi','kamalapur','kadalmethi','amethi','jammu & cashimir',02612,2017),
+(6,'punitha',22,'punitha@gmail.com',9326486317,'peerval','kurukampati','keechivada','bhuvenshwer','oddisa',212708,'KIIT',326,'kIIT',1,99,98,97,96,95,100,
+'borakpur','veerangal','pandiya','gowgathi','odissa',82612,2017),
+(7,'beem',15,'beem@gmail.com',9327486317,'elachi','verukampati','durukamtee','mudiyalveda','west_bengal',212708,'vbt',323,'latvel',1,76,77,78,79,75,581,
+'kitachpur','katuvadi','kuluvarpatel','marangudi','west_bengal',56981,2017),
+(8,'tsunade',35,'tsunade@gmail.com',8636486317,'guravur','pidaval','kelakavadi','beachvigar','kerela',012708,'patuu',888,'GHR',1,55,56,57,58,59,700,
+'erutvadi','varangal','kuchipidi','beachvigar','kerela',82612,2017),
+(9,'rajaraja',24,'rajaraja@gmail.com',3694486317,'cholapuram','thirutavdi','kumblaveer','vadakuved','bihar',222708,'SIIT',326,'virumba',1,66,67,68,69,70,900,
+'tuklakgur','kiruvadi','harithpur','vadakuved','bihar',82612,2017),
+(10,'vimal',28,'vimal@gmail.com',6666486317,'siruval','thiruval','padyavadi','thirupathi','andra_pradesh',712708,'TIT',963,'thirumala',1,22,48,67,98,63,890,
+'katmandu','gorakpur','dandiya','thirupathi','andra_pradesh',55612,2017);
+select*from students;
+alter table students add column last_name varchar(20);
+update students set adhar=0 where adhar='no';
+alter table students add column adhar varchar(10);
+update students set adhar='no' where id=10;
+alter table students add column degree varchar(20);
+alter table students add column department varchar(20);
+update students set degree='B.A'where id=7;
+SELECT  AVG(tamil+english+physics+chemistry+biology) FROM students where id=1;
+SELECT  AVG(tamil+english+physics+chemistry+biology) FROM students;
+SELECT  min(tamil+english+physics+chemistry+biology) FROM students ;
+SELECT  name,max(tamil+english+physics+chemistry+biology) as maximum FROM students where id=2;
+SELECT  name,max(tamil+english+physics+chemistry+biology) as maximum FROM students where id=1;
+SELECT  semester,name,college_name,department,min(tamil+english+physics+chemistry+biology) as minimum FROM students group by semester and department;

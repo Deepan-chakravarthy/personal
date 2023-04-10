@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="sps.css">
+</head>
+<body>
+    <header>
+        <h1>Stone Paper and Scissor</h1>
+    </header>
+     <h2>Choose your move</h2>
+     <div class="img">
+           <div class="img1">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMYvp5dWC0yb2tBYja_quDAPsuMml216VcWQ&usqp=CAU" width="300" height="400" onclick="move1()">
+               <h2>Stone</h2>
+           </div>
+           <div class="img2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ4kqPZiccsqwhUUvu8iFPvi8oLXBrXZZ2X9VawJwp4bCdsR7SnHNVnYB0pOdSVqcb3Kk&usqp=CAU" width="300" height="400" onclick="move2()">
+                <h2>Paper</h2>
+           </div>
+           <div class="img3">
+                <img src="https://cdn.protoolreviews.com/wp-content/uploads/2014/07/Scissors.jpg" width="300" height="400" onclick="move3()">
+                <h2>Scissor</h2>
+           </div>
+     </div>
+     <div class="win">
+         <h2>Computer move</h2>
+         <p id="com">----</p>
+         <p id="res"><strong>Result</strong></p>
+         <h3>Score</h3>
+         <p><strong>player: <span id="pr">0</span></strong></p>
+         <p><strong>computer: <span id="cr">0</span></strong></p>
+     </div>
+    
+</body>
+<script src="sps.js"></script>
+</html>

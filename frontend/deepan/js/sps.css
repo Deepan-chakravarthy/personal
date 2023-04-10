@@ -1,0 +1,39 @@
+header{
+    text-align: center;
+    color:rgb(249, 7, 7);
+    font-style: oblique;
+    text-decoration:underline;
+}
+body{
+    background-color: rgb(168, 228, 250);
+}
+h2{
+    text-align: center;
+    margin: 2em;
+    margin-bottom: 0%;
+    font-style: oblique;
+}
+.img{
+    display: flex;
+    margin-left: 14%;
+}
+.img1,.img2,.img3{
+    margin: 2em;
+}
+img{
+    border-radius: 50%;
+}
+.win{
+    text-align: center;
+    margin-top: 0%;
+}
+.win h3{
+     text-decoration: underline;
+     color: green;
+}
+#res{
+    color:blue;
+}
+#com{
+    color: red;
+}

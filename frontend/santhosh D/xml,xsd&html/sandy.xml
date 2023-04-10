@@ -1,0 +1,14 @@
+<college>
+<department name="tamil">
+<name>santhosh</name>
+<age>22</age>
+<address>43/b tv mailai</address>
+<mail>sandy@mail.com</mail>
+</department>
+<department staff="details">
+<name>suman</name>
+<age>34</age>
+<city>chennai</city>
+<country>jermany</country>
+</department>
+</college>

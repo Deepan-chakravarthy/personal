@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stonepaper</title>
+ 
+    <style>
+        body{
+            margin:0;
+            padding-top:0;
+        }
+        .hello{
+            background-image:url(kia.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            border: solid black 2px;
+        }
+        .thalaipu{
+       text-align: center;
+       background-color: bisque;
+     
+        }
+        .main{
+         display: block;
+         justify-content: space-between;
+         margin-top: 1%;
+         margin-left: 15%;
+         
+         width:50em;
+
+        }
+        .imp{
+            display: flex;
+            justify-content: space-between;
+        }
+        .h3{
+            text-align: right;
+        }
+        .side{
+           
+            width:70em;
+        }
+        .img1{
+            border-radius: 10%;
+        }
+        .img2{
+            border-radius: 10%;
+        }
+        .img3{
+            border-radius: 10%;
+        }
+       .outputbox{
+        display: block;
+       }
+       .bounce {
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            background: #fefefe;
+            color: #333;
+            border: 1px solid #4a4a4a;
+        }
+        
+    </style>
+</head>
+
+<body>
+   
+    <div class="hello">
+        <div>
+     
+            <h1 class="thalaipu"> let's play</h1>
+        </div>  
+       <div class="imp">
+        <div class="content">
+          <div class="main">
+                <div style="display: flex;">
+                <button onclick="output_('stone');"><img src="stone.jpg" alt="stone" width="200px" height="200px" class="img1"  ></button>
+                </div>
+                <div >
+                <button  onclick="output_('paper');"><img src="paper.jpg" alt="paper"  width="200px" height="200px" class="img2" ></button>
+                </div>
+                <div >
+                <button  onclick="output_('scissor');"><img src="scissor.jpg" alt="scissor"  width="200px" height="200px"class="img3"></button>
+                </div>
+            </div>
+            <div class="side">
+               <h1 style="color: azure;text-align: right;"> "ARE YOU READY ? "</h1>
+            </div>  
+           
+      </div>
+      <div>  
+        <div style="text-align:'center'; padding-right: 500px;">
+            <!-- <h2><input type="text" id="compresult" ></h2> -->
+            <table>
+                <tr>
+                    <td>
+            <h3  style="color:yellow;border:rgb(200, 5, 5) 1px" >User input : </h3> </td>
+            <td><input type="text" id="input"></td>
+             </tr>
+             <tr>
+            <td><h3  style="color:yellow">Computer Input : </h3></td>
+            <td><input type="text" id="compinput"></td>
+            </tr>
+            <tr>
+            <td>
+            <h2  style="color:yellow">Final result : </h2> </td>
+            <td><input type="text"id="compresult"></td>
+           </tr>
+           </table>
+
+        </div> 
+        <!-- <div class="output">
+           <h2><input type="text"id="output"></h2>
+        </div>   -->
+      </div>
+    </div>
+    </div>
+    
+
+    <script src="array.js">
+      
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.signup {
+  display: flexbox;
+  width: 500px;
+  padding: 5% 5%;
+  margin: 3px 350px;
+}
+.heading {
+  background-color: orange;
+  padding: 4px 6px;
+  border-radius: 10px 10px 0px 0px;
+}
+.tab {
+  width: 600px;
+  padding: 6px;
+  padding: 7px;
+}
+#con {
+  margin: 5px 2px;
+  padding: 4px;
+  width: 271px;
+}
+.tbl {
+  margin: 5px 2px;
+  padding: 4px;
+  width: 260px;
+}
+.gen {
+  margin: 5px;
+  padding: 5px 2px;
+}
+select {
+  padding: 4px;
+  width: 84px;
+  margin: 5px 2px;
+}
+.lable {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 25vh;
+  text-align: right;
+}
+.terms {
+  margin: 5px 2px;
+  padding: 4px;
+}
+.b1,
+.b2 {
+  margin: 4px;
+  padding: 4px;
+  color: white;
+  border-radius: 3px;
+  border: none;
+}
+.b1 {
+  background-color: green;
+}
+.b2 {
+  background-color: red;
+}
+.btn {
+  background-color: orange;
+  padding-left: 375px;
+  padding-block: 5px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+form {
+  background-color: darkblue;
+  color: yellow;
+  border: none;
+}

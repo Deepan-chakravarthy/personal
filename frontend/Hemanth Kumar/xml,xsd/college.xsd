@@ -1,0 +1,22 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="university">
+<xs:complextype>
+<xs:sequence>
+      <xs:element maxOccurs="unbounded" name="college">
+<xs:complextype>
+<xs:sequence>
+      <xs:element name="strength" type="xs:int"/>
+	  <xs:element name="boys" type="xs:int"/>
+	  <xs:element name="girls" type="xs:int"/>
+</xs:sequence>
+      <xs:attribute name="one" type="xs:string" />
+	  <xs:attribute name="two" type="xs:string" />
+	  <xs:attribute name="three" type="xs:string"/>
+	  <xs:attribute name="four" type="xs:string"/>
+	  <xs:attribute name="five" type="xs:string"/>
+</xs:complextype>
+</xs:element>
+</xs:sequence>
+</xs:complextype>
+</xs:element>
+</xs:schema>

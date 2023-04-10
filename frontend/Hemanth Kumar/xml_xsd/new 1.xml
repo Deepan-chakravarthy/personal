@@ -1,0 +1,20 @@
+<students>
+     <student attribute="type">
+	    <name></name>
+	    <age> </age>
+	    <email></email>
+	 </student>
+	 
+	 <student attribute="category ">
+	    <name></name>
+	    <age> </age>
+	    <email></email>
+	 </student>
+	 
+	 <student attribute="section">
+	    <name></name>
+        <age> </age>
+	    <email></email>
+	 </student>
+
+</students>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bangers&family=Courgette&family=Edu+VIC+WA+NT+Beginner&family=Kaushan+Script&family=Lobster+Two:wght@700&family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <title>Boostrap</title>
+    <style>
+     .first{
+      display: flex;
+      padding: 20px;
+      margin-left: 50%;
+      justify-content: right;
+      justify-content: space-between;
+      background-color: black;
+      
+     }
+     fieldset{
+      background-color: black;
+     }
+     body{
+      margin: 0%;
+     }
+     h1{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: xx-large;
+      align-items: center;
+      text-align: center;
+      
+     }
+     .row{
+      display: flex;
+      margin: 2em;
+      justify-content:space-between
+
+     }
+   .row:hover{
+        
+        box-shadow:0px 0px 20px 10px rgb(97, 88, 88) ;
+    }
+    .image{
+      display: flex;
+      margin: 2em;
+      justify-content: space-between;
+    }
+    
+    .img1:hover{
+      box-shadow: 0px 0px 20px 10px black;
+    }
+    h1{
+      font-family: cursive;
+      font-style: inherit;
+      font-size: x-large;
+    }
+    .hd{
+      text-align: center;
+      font-size: xx-large;
+      font-family: 'Kaushan Script', cursive;
+      font-size: 47px;
+      background-color: black;
+      color: rgb(242, 242, 151);
+
+    }
+    h2{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size:x-large;
+      text-align: center;
+    }
+    label{
+      color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    button{
+      align-items: center;
+      background-color: aliceblue;
+      text-align: center;
+      padding: 5px 5px 5px 5px;
+      border: white;      
+      
+    }
+    button:hover{
+      box-shadow: 5px 5px 5px 5px black;
+    }
+    .rate{
+      display: flex;
+      margin: 2em;
+    }
+    .rat:hover{
+      box-shadow: 5px 5px 5px 5px black;
+    }
+    h5{
+      align-items: center;
+      text-align: center;
+      font-size: xx-large;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.last{
+  align-items: center;
+  font-size: x-large;
+  text-align: center;
+}
+      </style>
+</head>
+<body>
+  <fieldset>
+  <div class="first">
+   <div class="dropdown">
+    <button type="button" class="btn btn-danger dropdown-toggle pd-5" data-bs-toggle="dropdown">
+      HOME
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">SANTHOSH</a></li>
+      <li><a class="dropdown-item" href="#">SANDY</a></li>
+      <li><a class="dropdown-item" href="#">MANDY</a></li>
+    </ul>
+  </div>
+  <div class="dropdown">
+    <button type="button" class="btn btn-danger dropdown-toggle pd-5" data-bs-toggle="dropdown">
+      CONTACTS
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">DEEPAN</a></li>
+      <li><a class="dropdown-item" href="#">VICKY</a></li>
+      <li><a class="dropdown-item" href="#">GOPAL</a></li>
+    </ul>
+  </div>
+  <div class="dropdown">
+    <button type="button" class="btn btn-danger dropdown-toggle pd-5" data-bs-toggle="dropdown">
+      HELP
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">ALEX M</a></li>
+      <li><a class="dropdown-item" href="#">SURENDHER</a></li>
+      <li><a class="dropdown-item" href="#">SARVINO</a></li>
+    </ul>
+  </div>
+  <div class="dropdown">
+    <button type="button" class="btn btn-danger dropdown-toggle pd-5" data-bs-toggle="dropdown">
+      ABOUT
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Link 1</a></li>
+      <li><a class="dropdown-item" href="#">Link 2</a></li>
+      <li><a class="dropdown-item" href="#">Link 3</a></li>
+    </ul>
+  </div>
+  </div>
+</div>
+</fieldset>
+<div class="hd">
+  Humans in Space
+</div>
+<header>
+ 
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+   <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+    <div class="carousel-inner">
+    <div class="carousel-item active">    
+      <img src="https://wallpapers-hub.art/wallpaper-images/186462.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="https://wallpapercave.com/wp/lyIJSqP.jpg" alt="Chicago" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.pixelstalk.net/wp-content/uploads/2016/04/Backgrounds-download-space-wallpapers-HD.jpg" alt="New York" class="d-block" style="width:100%">
+    </div>
+  </div>  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+</header>
+<div class="mt-4 p-5 bg-secondary text-white rounded text-center">
+  <h1> The Galaxy......</h1> 
+  <p>Space is an almost perfect vacuum, nearly void of matter and with extremely low pressure.
+     In space, sound doesn't carry because there aren't molecules close enough together to transmit sound between them...</p> 
+</div>
+</div>
+<div class="frt">
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4 bg-warning  text-center">
+      <h3>Welcome</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4 bg-success text-center">
+      <h3>What is this</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4 bg-info text-center">
+      <h3>Please come</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-3">
+  <h2>Are there any human bodies in space?</h2>
+  <p>Human remains are generally not scattered in space so as not to contribute to space debris.
+     Remains are sealed until the spacecraft burns up upon re-entry 
+     into the Earth's atmosphere or they reach their extraterrestrial destinations.</p> 
+  <div class="image">
+  <div class="img1">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoXxkmz99IzTxZ7bL9aSvIb3ColjbQTi1CyA&usqp=CAU"alt="Paris" width="304" height="236"> 
+  
+  </div>
+  <div class="img1">
+   
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXwKRXTsCZE6z3Av95q5Dk21zJ18c15uuZDue5R48P-t-GdLlFNFTQbEftOaaO0Q2UfLc&usqp=CAU" alt="Paris" width="304" height="236"> 
+   </div>
+    <div class="img1">
+  <img src="https://www.funkidslive.com/wp-content/uploads/2015/12/how-many-people-in-space.jpg" class="float-start" alt="Paris" width="304" height="236"> 
+  </div>
+  <div class="img1">
+  <img src="https://st.depositphotos.com/1035224/2336/i/600/depositphotos_23362288-stock-photo-astronaut-in-the-tunnels-of.jpg"  alt="Paris" width="304" height="236"> 
+</div>
+</div>
+</div>
+<h1>Fill The Form to Space.....</h1>
+<br>
+<div>
+  <div class="container mt-3">
+      
+      <form action="/action_page.php">
+          <div class="mb-3 mt-3">
+              <label for="name">NAME</label>
+              <input type="email" class="form-control" id="NAME" placeholder="name" name="email">
+            </div>
+            <div class="mb-3 mt-3">
+              <label for="email">LAST_NAME</label>
+              <input type="email" class="form-control" id="Last_name" placeholder="Last_Name" name="email">
+            </div>
+        <div class="mb-3 mt-3">
+          <label for="email">EMAIL_ID</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3">
+          <label for="pwd">PASSWORD</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+                      
+        <label>YOUR COUNTRY</label>                  
+  <select value="seats" id="seats">
+  <option value="1">America</option>
+  <option value="1">Pakishtan</option>
+  <option value="1">England</option>
+  <option value="1">Ingland</option>
+  <option value="1">Cina</option><br>
+  </select><br>                                        
+  </div> 
+  <center>  <button>SUBMIT</button>  </center>                                 
+</form> <br>
+<h5>Rating....</h5>
+<div class="rate">  
+  <div class="rat">
+<div class="container mt-3">
+
+  <div class="mt-4 p-5 bg-white text-dark rounded">
+    <img src="https://e7.pngegg.com/pngimages/833/987/png-clipart-michael-jackson-the-life-of-an-icon-computer-icons-free-icon-michael-jackson-celebrities-face.png" alt="png"  width="50" height="50">Michael-Jackson <i class="bi bi-emoji-smile text-primary"></i>  <i class="bi bi-emoji-smile text-primary "></i>  <i class="bi bi-emoji-smile  text-primary"></i>  <i class="bi bi-emoji-smile "></i>  <i class="bi bi-emoji-smile "></i>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p> 
+  </div>
+</div>
+</div>
+<div class="rat">
+<div class="container mt-3">
+  
+  <div class="mt-4 p-5 bg-white text-dark  rounded">
+    <img src="https://e7.pngegg.com/pngimages/863/828/png-clipart-icon-steve-jobs-apple-steve-jobs-celebrities-monochrome.png" alt="png"  width="50" height="50"> Steve-Jobs  <i class="bi bi-emoji-smile text-primary "></i>  <i class="bi bi-emoji-smile  text-primary"></i>  <i class="bi bi-emoji-smile text-primary "></i>  <i class="bi bi-emoji-smile text-primary "></i>  <i class="bi bi-emoji-smile "></i>
+    <p> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p> 
+  </div>
+  </div>
+</div>
+</div>  
+</div>
+<section class="footer">
+  <h4>About Us</h4>
+  <p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we’re the nation’s oldest Catholic and Jesuit university.
+  <br>    
+  We’re a community of people who bridge our disparate experiences and identities. Meet the people and places that make Eduford home.</p>
+  <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkdin"></i>
+  </div>
+  <p>Made with  <i class="fa fa-heart-o"> <strong>SONTO</strong></i></p>
+  <center><i class="bi bi-c-circle">all copright reviced by sonto</i></center>   
+</section>  
+<div class="last">
+<i class="bi bi-twitter"></i>   
+<i class="bi bi-telegram"></i>
+<i class="bi bi-whatsapp"></i>
+<i class="bi bi-person-lines-fill"></i>           
+</div><br>  
+</body>
+</html>

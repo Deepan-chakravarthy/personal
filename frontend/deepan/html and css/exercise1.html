@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netflix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        h{
+            text-align: center;
+            display: flex;
+            justify-content:center ;
+            align-items:center ;
+            height: 100vh;
+
+       }
+       h1{
+           text-align: center;
+           height: 10vh;
+           margin-top: 200px;
+           color:red;
+           font-family: 'Edu VIC WA NT Beginner', cursive;
+       }
+       h2{
+        text-align: center;
+        color: brown;
+        font-style: italic;
+        text-decoration:underline;
+       }
+       .fg{
+        text-align: center;
+       }
+       .bt{
+        text-align: center;
+       }
+        a:link, a:visited {
+          color: greenyellow;
+        }
+
+        a:hover, a:active {
+          color: red;
+        }
+        .button1 {
+            background-color:green;
+        }
+        .button2 {
+            background-color:red;
+        }
+        .show{
+            font-size: medium;
+            color: black;
+            text-decoration: underline;
+        }
+       body{
+           background-image: url('https://image.shutterstock.com/image-illustration/internet-security-closed-pad-lock-260nw-515395867.jpg');
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: cover;
+       }
+    </style>
+    <div>
+        <h1>login</h1>
+    <h2>
+        user name:
+        <input type="textbox" placeholder="please enter your name here" id="1" size="25">
+        <br>
+        
+        password:
+        <input type="password" value="abcd@123" id="myinput" placeholder="please enter password here" size="25" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br>
+       <div class="show"><input type="checkbox" onclick="myFunction()">Show Password</div> 
+    </h2>
+    <br>
+    <div class="bt"><button class="button1">log in</button> <button class="button2">New user</button></div>
+    <div class="fg"><p><a href="">forgot password</a></p></div>
+    </div>
+    
+</body>
+</html>

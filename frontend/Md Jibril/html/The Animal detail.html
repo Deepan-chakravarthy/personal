@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Animal detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../javaScript/icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 1cm;
+        background-color: aqua;
+      }
+      .box {
+        margin-left: 45vh;
+        margin-top: 20vh;
+        width: 50%;
+        height: 60vh;
+        border: 1px solid black;
+      }
+
+      body {
+        font-family: Bahnschrift Light;
+        text-align: center;
+        vertical-align: center;
+      }
+      button {
+        color: white;
+        border: none;
+        width: 90px;
+        padding: 3px 3px;
+      }
+      label {
+        text-align: left;
+        width: 75px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1><b>The Animal detail is here </b></h1>
+      <p>ID : 58</p>
+      <form>
+        <p>
+          <label for="name">Name </label><label>:</label>
+          <input
+            type="text"
+            placeholder="Enter the Name"
+            name="name"
+            required
+          />
+        </p>
+        <p>
+          <label for="age">age </label><label>:</label>
+          <input type="text" placeholder="Enter the Age" name="age" required />
+        </p>
+        <label for="email">email </label><label>:</label>
+        <input type="email" placeholder="Enter email" name="email" required />
+        <p>
+          <label for="mobile">mobile</label><label>:</label>
+          <input
+            type="number"
+            placeholder="Enter mobile number"
+            name="mobile"
+            required
+          />
+        </p>
+        <p>
+          <label for="Clgid">College ID</label><label>:</label>
+          <input
+            type="text"
+            placeholder="Enter the College ID"
+            name="clgid"
+            required
+          />
+        </p>
+
+        <button type="reset" style="background-color: blue">Back</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="my_game.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    /* body{
+        background-color: rgb(203, 147, 255);
+    } */
+    .container{
+        align-items: center;
+        text-align: center;
+        padding-top: 100px;
+        
+       
+      
+        
+    }
+    button{
+    font-size: 30px;
+    padding: 8px;
+    background: none;
+    border:3px;
+    
+}
+button:hover{
+    cursor: pointer;
+    /* box-shadow:0px 0px 5px 4px rgb(123, 121, 121) ;
+ */}
+h1{
+    font-family: 'Rubik Dirt', cursive;
+    font-size: xx-large;
+}
+.i{
+ size: 15px;
+}
+.head{
+    text-align: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: 'Rubik Dirt', cursive;
+    background-color: rgb(118, 148, 148);
+}
+
+
+body{
+    margin: 0%;
+    padding: 0%; 
+    background-image: url(https://c.tenor.com/OvHQWExcPh0AAAAM/cartoons-being-ian.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  
+  
+    
+   
+}
+.last{
+    text-align: right;
+}
+
+</style>
+<body> 
+    <div>
+
+    </div>
+   
+    <header>  
+    <div class="head">
+        <p>Welcome to ..<i class="bi bi-egg-fill"></i>Rock..<i class="bi bi-stickies"></i>Paper..<i class="bi bi-scissors"></i>Scissor... Game..</p>
+    </div>
+</header>  
+
+    <div class="container"> 
+        <div class="screen">
+            <div class="button">
+                <h1>Mine</h1>
+                <button onclick="game(0)"><i class="bi bi-egg-fill">Rock</i></button>
+                <button onclick="game(1)"><i class="bi bi-stickies">Paper</i></button>
+                <button onclick="game(2)"><i class="bi bi-scissors">Scissor</i></button>
+            </div>
+            <h1>Computer</h1>
+            <h2 id="computer">Computer</h2>
+            <div>
+                <p class="me">Me:  <span id="me_score">0 </span></p>
+                <p class="comp">Computer: <span id="computer_score">0 </span></p>
+                
+                
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var me =0;
+        var comp=0; 
+        
+
+        
+        
+
+        function game(x){
+            var list=["Rock","Paper","Scissor"];
+
+            var computer_value=Math.floor(Math.random()*3);
+            document.getElementById("computer").innerHTML=list[computer_value];
+
+            (x==computer_value)? "":"";
+
+            (x == 0 && computer_value == 1)? comp++ :"";
+            (x == 0 && computer_value == 2)? me++:""; 
+            
+            (x == 1 && computer_value == 0)? me++:""; 
+            (x == 1 && computer_value == 2)? comp++:""; 
+
+            (x == 2 && computer_value == 0)? comp++:""; 
+            (x == 2 && computer_value == 1)? me++:"";
+             document.getElementById("me_score").innerHTML=me;
+             document.getElementById("computer_score").innerHTML=comp;                 
+                                    
+        }         
+        
+    </script>
+    </body>
+</body>
+</html>

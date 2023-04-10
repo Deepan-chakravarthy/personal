@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calc</title>
+</head>
+
+<body>
+    <div class="Overall">
+        <div>
+            <div>Bill total</div>
+            <div>
+                <span>Rs</span>
+                <input onkeyup="Calculate_Bill()" id="Bill_Input" type="text" placeholder="0.00" />
+            </div>
+        </div>
+        <div>
+            <div>Tip</div>
+            <div>
+                <span>Rs</span>
+                <input onkeyup="Calculate_Bill()" id="Tip_Input" type="text" placeholder="00" />
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>People</div>
+                <div>
+                    <span>
+                        <button onclick="increasePeople()">
+                            <span id="numberOfPeople">+</span>
+                        </button>
+                    </span>
+                    <span id="No_of_People">1</span>
+                    <span>
+                        <button>
+                            <span onclick="decreasePeople()">-</span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div>Total Per Person</div>
+                <div id="Per_Person_Amt">Rs0.00</div>
+            </div>
+        </div>
+    </div>
+    <script src="TipCalc.js"></script>
+</body>
+
+</html>

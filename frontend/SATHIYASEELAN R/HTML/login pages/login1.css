@@ -1,0 +1,25 @@
+table,th,td{
+    border: 1px solid;
+}
+table{
+    background-color:lightblue;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+h1{
+    font-size: 25px;
+    margin: 0%;
+}
+h6{
+    font-size: 15px;
+    margin: 0%;
+    color: red;
+}
+input{
+    border-radius: 4px;
+}
+input[name='in']{
+    accent-color:orange;
+}

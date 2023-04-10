@@ -1,0 +1,6 @@
+.header {
+    background-image:linear-gradient(right green left blue);
+    background-size: cover;
+    padding-top: 5%;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+<students_list>
+    <students class='A'>
+	  <no_students>70</no_students>
+	  <no_boys>40</no_boys>
+	  <no_girls>30</no_girls>
+	  <class_inchrage>mukesh</class_inchrage>
+	</students>
+	<students class='B'>
+	  <no_students>80</no_students>
+	  <no_boys>40</no_boys>
+	  <no_girls>40</no_girls>
+	  <class_inchrage>Rajesh</class_inchrage>
+	</students>
+	<students class='C'>
+	  <no_students>60</no_students>
+	  <no_boys>30</no_boys>
+	  <no_girls>30</no_girls>
+	  <class_inchrage>Malar</class_inchrage>
+	</students>
+	<students class='D'>
+	  <no_students>90</no_students>
+	  <no_boys>50</no_boys>
+	  <no_girls>40</no_girls>
+	  <class_inchrage>Ravikumar</class_inchrage>
+	</students>
+</students_list>

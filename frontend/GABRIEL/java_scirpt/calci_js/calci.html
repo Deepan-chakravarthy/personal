@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="calci.css">
+    <style>
+      table tr td{
+      
+        text-align: center;
+        background-color: black;
+        color:chartreuse;
+        height: 70px;
+        width:80px;
+        font-size: large;
+      
+     
+        
+      }
+      td{
+        padding: 5px;
+      }
+      table{
+        margin-left: 10%;
+        border-collapse: collapse;
+        border-radius: 10%;
+        
+      
+      }
+      .tab{
+        display: grid;
+        grid-template-columns:minmax(5fr,6fr) minmax(5fr,6fr);
+      }
+      button{
+        width: 50px;
+        height:50px;
+        background-color: grey;
+        font-size: large;
+        border-radius: 10%;
+        
+      }
+      button:hover{
+        background-color:aqua;
+        border:yellowgreen 1px;
+      }
+      .menu{
+        background-size: fill;
+      }
+    </style>
+    
+
+
+</head>
+<body>
+    <div class="container" >
+        <div style="background-color: skyblue;"class="header"> <marquee width="100%" direction="left"><h2>கால்குலேட்டர் பேஜ்க்கு வருகை  தந்துள்ள அனைவரையும் வருக வருக என வரவேற்கிறேன்</h2></marquee></div>
+        <div  style="background-image:url(lap.jpg);"class="menu"> </div>
+        <div  style="background-color: aqua;"class="content">  
+            
+            <table style= " border-radius: 10%;" class="tab">
+                <tr>
+                    <td colspan="4" ><input type="text" id="ui" placeholder=0 style="width:300px ;height:50px;background-color:chartreuse;color:black;font-size: large;text-align: right;"> </td>
+                </tr>
+               
+                <tr>
+                    <td colspan="2" style="text-align:center ;"><button onclick="clears()" id="clr" style="width:150px ;"> C </button></td>
+                    <td ><button onclick="uiresult('%')"> % </button></td>
+                    <td ><button onclick="uiresult('/')">&#247;</button></td>
+                </tr>
+                <tr>
+                    <td ><button onclick="uiresult(7)" >7</td></button>
+                    <td ><button onclick="uiresult(8)" >8</button></td>
+                    <td ><button onclick="uiresult(9)" >9</button></td>
+                    <td ><button onclick="uiresult('*')" >x</button></td>
+                </tr>
+                <tr>
+                    <td ><button onclick="uiresult(4)">4</button></td>
+                    <td ><button onclick="uiresult(5)" >5</button></td>
+                    <td ><button onclick="uiresult(6)" >6</button></td>
+                    <td ><button onclick="uiresult('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td  ><button onclick="uiresult(1)" >1</button></td>
+                    <td ><button onclick="uiresult(2)">2</button></td>
+                    <td  ><button onclick="uiresult(3)">3</button></td>
+                    <td  ><button onclick="uiresult('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="uiresult(0)">0</button></td>
+                    <td><button onclick="dele()">&lAarr;</button></td>
+                    <td ><button onclick="uiresult('.')">.</button></td>
+                    <td ><button onclick="eqlresult()" id="eql">=</button></td>
+                </tr>
+              
+            </table>
+            </div>
+           <!-- <div class="side_content">
+             
+           </div> -->
+          
+<!--             
+        
+        
+         
+        <div style="background-color:blanchedalmond"> <h4>2</h4>   </div>
+        <div style="background-color:midnightblue;"> <h4>3</h4>   </div>
+        <div style="background-color: mediumorchid">  <h4>4</h4>  </div>
+        <div style="background-color:mediumaquamarine">  <h4>5</h4>  </div>
+        <div style="background-color: mediumvioletred"> <h4>6</h4>   </div>
+        <div style="background-color: mediumorchid">  <h4>4</h4>  </div>
+        <div style="background-color:mediumaquamarine">  <h4>5</h4>  </div>
+        <div style="background-color: mediumvioletred"> <h4>6</h4>   </div>
+        <div style="background-color:midnightblue;"> <h4>3</h4>   </div>
+        <div style="background-color: mediumorchid">  <h4>4</h4>  </div>
+        <div style="background-color:mediumaquamarine">  <h4>5</h4>  </div>
+        <div style="background-color: mediumvioletred"> <h4>6</h4>   </div>
+        <div style="background-color: mediumorchid">  <h4>4</h4>  </div>
+        <div style="background-color:mediumaquamarine">  <h4>5</h4>  </div>
+        <div style="background-color: mediumvioletred"> <h4>6</h4>   </div> --> -->
+        <div style="background-color: mediumvioletred" class="footer">   </div>
+
+
+
+
+    </div>
+    <script src="calci.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  /* font-family: Gotham Rounded, sans-serif; */
+  font-family: 'Akronim', cursive;
+}
+.sam{
+  margin-left: 250px;
+  margin-top: 0%;
+  
+  
+}
+
+body {
+  background-image: url(https://img5.goodfon.com/wallpaper/nbig/6/fa/interer-dizain-gostinaia-modern-kreslo-podushki-golubots-ser.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: linear-gradient(to right, hsl(200, 100%, 50%), hsl(175, 100%, 50%)); */
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.clock {
+  
+  width: 200px;
+  height: 200px;
+  /* background-color: rgba(251, 207, 207, 0.8); */
+  background-image: url(https://image.shutterstock.com/image-vector/cute-panda-winking-eye-cartoon-260nw-1372845953.jpg );
+  
+  border-radius: 50%;
+  border: 6px solid rgb(45, 44, 44);
+  position: relative;
+  /* margin: 10%; */
+  /* margin-right: 100px; */
+  margin-left: 70px;
+  margin-top: 30px;
+  box-shadow:5px 5px 5px 5px rgb(81, 80, 80)
+
+}
+
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 1.5rem;
+}
+
+.clock .number1 { --rotation: 30deg; }
+.clock .number2 { --rotation: 60deg; }
+.clock .number3 { --rotation: 90deg; }
+.clock .number4 { --rotation: 120deg; }
+.clock .number5 { --rotation: 150deg; }
+.clock .number6 { --rotation: 180deg; }
+.clock .number7 { --rotation: 210deg; }
+.clock .number8 { --rotation: 240deg; }
+.clock .number9 { --rotation: 270deg; }
+.clock .number10 { --rotation: 300deg; }
+.clock .number11 { --rotation: 330deg; }
+
+.number1 div{
+  transform: rotate(-30deg) ;
+}
+.number2 div{
+  transform: rotate(-60deg) ;
+}
+.number3 div{
+  transform: rotate(-90deg) ;
+}
+.number4 div{
+  transform: rotate(-120deg) ;
+}
+.number5 div{
+  transform: rotate(-150deg) ;
+}
+.number6 div{
+  transform: rotate(-180deg) ;
+}
+.number7 div{
+  transform: rotate(-210deg) ;
+}
+.number8 div{
+  transform: rotate(-240deg) ;
+}
+.number9 div{
+  transform: rotate(-270deg) ;
+}
+.number10 div{
+  transform: rotate(-300deg) ;
+}
+.number11 div{
+  transform: rotate(-330deg) ;
+}
+
+
+.clock .hand {
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border: 1px solid white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.clock .hand.second {
+  width: 3px;
+  height: 45%;
+  background-color: red;
+}
+
+.clock .hand.minute {
+  width: 5px;
+  height: 35%;
+  background-color: black;
+  
+}
+
+.clock .hand.hour {
+  width: 7px;
+  height: 31%;
+  background-color: black;
+} 
+
+/*  */
+/* digital clock */
+
+.last{
+  background-color: rgb(241, 238, 203);
+  margin-left: 1320px;
+  margin-right: 50px;
+  margin-top: 330px;
+  border: 3px solid rgb(45, 44, 44);
+  box-shadow:5px 5px 5px 5px rgb(23, 23, 23);
+  font-family: 'Akronim', cursive;
+  text-align: center;
+ 
+}
+.i{
+  background-color: black;
+  font-size: x-large;
+  font-family: 'Akronim', cursive;
+}
+

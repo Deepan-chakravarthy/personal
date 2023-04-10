@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #10101E;
+}
+.Digital_Clock .Date,.Time{
+    display:flex;
+    justify-content: space-evenly;
+}
+.Digital_Clock{
+    color: white;
+    background: #10101E;
+    width: 600px;
+    padding: 15px 10px;
+    border: 3px solid #2e94e3;
+    border-radius: 10px
+}
+.Date{
+    font-size: 20pt;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.Time{
+    font-size: 60pt;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}

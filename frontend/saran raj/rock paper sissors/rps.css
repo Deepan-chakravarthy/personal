@@ -1,0 +1,89 @@
+body {
+    background-image: url("https://images.pexels.com/photos/35888/amazing-beautiful-breathtaking-clouds.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+   }
+#ROCK{
+    
+  background-color: #e7f30c;
+  border: none;
+  color: rgb(18, 16, 16);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+
+}
+#PAPER{
+    background-color: #0060ba;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+#SISSORS{
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+#SUSKE_UCHICHA{
+    color: #16b80a;
+}
+#NARUTO_UZUMAKI{
+    color: #061b4d;
+}
+#result{
+    color: #d6e317;
+}
+.sus{
+    color: aliceblue;
+}
+.nar{
+    color: aliceblue;
+}
+.res{
+    color: aliceblue;
+}
+.R{
+    text-align: center;
+    color: rgb(238, 223, 16);
+}
+.cen{
+    text-align: center;
+    padding: 100px;
+}
+
+.leg{
+    text-align: center;
+    font-size: 20px;
+    background-color: #4CAF50;
+     padding: 15px 32px;
+     
+}
+/* .leg:hover{
+    transform: scale(1.2); 
+} */
+.but:hover{
+
+    transform: scale(1.2);
+
+}

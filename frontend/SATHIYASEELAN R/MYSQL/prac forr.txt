@@ -1,0 +1,124 @@
+let a=prompt('enter a number');
+for (i=1;i<=15;i++)
+{
+    console.log(i+"x"+a+"="+i*a);
+}
+VM1423:4 1x6=6
+VM1423:4 2x6=12
+VM1423:4 3x6=18
+VM1423:4 4x6=24
+VM1423:4 5x6=30
+VM1423:4 6x6=36
+VM1423:4 7x6=42
+VM1423:4 8x6=48
+VM1423:4 9x6=54
+VM1423:4 10x6=60
+VM1423:4 11x6=66
+VM1423:4 12x6=72
+VM1423:4 13x6=78
+VM1423:4 14x6=84
+VM1423:4 15x6=90
+undefined
+let a=prompt('enter a number');
+for (i=1;i<=15;i++)
+{
+    console.log(i+" x "+a+" = "+i*a);
+}
+VM1440:4 1 x 24 = 24
+VM1440:4 2 x 24 = 48
+VM1440:4 3 x 24 = 72
+VM1440:4 4 x 24 = 96
+VM1440:4 5 x 24 = 120
+VM1440:4 6 x 24 = 144
+VM1440:4 7 x 24 = 168
+VM1440:4 8 x 24 = 192
+VM1440:4 9 x 24 = 216
+VM1440:4 10 x 24 = 240
+VM1440:4 11 x 24 = 264
+VM1440:4 12 x 24 = 288
+VM1440:4 13 x 24 = 312
+VM1440:4 14 x 24 = 336
+VM1440:4 15 x 24 = 360
+undefined
+let a=5;
+undefined
+let a=5;
+for int(i=1;i<=5,i++){for(j=1;j<=5;j++){
+    console.log('*')
+}}
+VM1684:2 Uncaught SyntaxError: Unexpected identifier
+let a=5;
+for int(i=1;i<=5,i++){for(j=1;j<=5;j++){
+    console.log(*)
+}}
+VM1699:2 Uncaught SyntaxError: Unexpected identifier
+let a=5;
+for int(i=1;i<=a,i++){for(j=1;j<=a;j++){
+    console.log(*)
+}}
+VM1721:2 Uncaught SyntaxError: Unexpected identifier
+let X=''
+for(i=1;i<=5;i++){}
+undefined
+let X=''
+for(i=1;i<=5;i++){
+    for(j=1;j<=5;j++){
+        x += i+'* '
+    }
+    x += "\n";
+}
+VM1933:4 Uncaught ReferenceError: x is not defined
+    at <anonymous>:4:9
+(anonymous) @ VM1933:4
+let x=''
+for(i=1;i<=5;i++){
+    for(j=1;j<=5;j++){
+        x += i+'* '
+    }
+    x += "\n";
+}
+'1* 1* 1* 1* 1* \n2* 2* 2* 2* 2* \n3* 3* 3* 3* 3* \n4* 4* 4* 4* 4* \n5* 5* 5* 5* 5* \n'
+let x=''
+for(i=1;i<=5;i++){
+    for(j=1;j<=5;j++){
+        x += i+'* ';
+    }
+    x += "\n";
+}
+'1* 1* 1* 1* 1* \n2* 2* 2* 2* 2* \n3* 3* 3* 3* 3* \n4* 4* 4* 4* 4* \n5* 5* 5* 5* 5* \n'
+let x=''
+for(i=1;i<=5;i++){
+    for(j=1;j<=5;j++){
+        x += i+'* ';
+    }
+    x += '\n';
+}
+'1* 1* 1* 1* 1* \n2* 2* 2* 2* 2* \n3* 3* 3* 3* 3* \n4* 4* 4* 4* 4* \n5* 5* 5* 5* 5* \n'
+let x=''
+for(i=1;i<=5;i++){
+    for(j=1;j<=5;j++){
+        x += i+'* ';
+    }
+    x += '\n';
+}console.log(x);
+VM2022:7 1* 1* 1* 1* 1* 
+2* 2* 2* 2* 2* 
+3* 3* 3* 3* 3* 
+4* 4* 4* 4* 4* 
+5* 5* 5* 5* 5* 
+
+undefined
+let x=''
+for(i=1;i<=5;i++){
+    for(j=1;j<=5;j++){
+        x +='* ';
+    }
+    x += '\n';
+}console.log(x);
+VM2033:7 * * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+
+undefined

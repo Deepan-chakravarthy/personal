@@ -1,0 +1,7 @@
+select name,tamil from task_6.student where tamil=(select max(tamil) from task_6.student);
+select name,english from task_6.student english=(select max(english) from task_6.student);
+select name,maths from task_6.student maths=(select max(maths) from task_6.student);
+select name,physics from task_6.student physics=(select max(physics) from task_6.student);
+select name,chemistry from task_6.student chemistry=(select max(chemistry) from task_6.student);
+select name,biology from task_6.student biology=(select max(biology) from task_6.student);
+ 

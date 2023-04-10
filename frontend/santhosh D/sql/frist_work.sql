@@ -1,0 +1,24 @@
+create schema sample;
+use sample;
+create table marksheets(rollno int,name varchar(20),subject varchar(20),age int(10));
+select * from marksheets;
+insert into marksheets values(1,'sandy','tamil',22);
+insert into marksheets values(1,'gaby','english',22),(1,'gopal','maths',32),(1,'gaby','computer science',24),(5,'surendher','programming',25);
+update marksheets set rollno=2  where age=32;
+set sql_safe_updates=0;  
+update marksheets set rollno=2 where subject="english";
+update marksheets set rollno=3 where name="gopal";
+update marksheets set rollno=4 where age=24;
+update marksheets set age="21" where age="22";
+alter table marksheets add column address varchar(20);
+update marksheets set address="23453" where rollno=1; 
+delete from marksheets where rollno=1;
+insert into marksheets values(1,'sandy','tamil',19,'chennai');
+select rollno from marksheets
+order by rollno asc ;
+update marksheets set rollno=1 and 2 and 3 and 4 and 5  where age=21 and 32 and 24 and 25 and 19;
+update marksheets set rollno=2 where name="gopal";
+update marksheets set rollno=3 where age=24;
+update marksheets set rollno=4 where age=25;
+update marksheets set rollno=5 where age=19;
+update marksheets set address="tv malai" where age=21;

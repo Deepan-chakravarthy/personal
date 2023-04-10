@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+   
+    background-image: linear-gradient(rgba(30, 36, 58, 0.7),rgba(185, 185, 185, 0.7)),url(https://wallpaperaccess.com/full/1087790.jpg);
+    display: grid;
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+  section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .clock {
+    height: 500px;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 15px solid rgb(42, 43, 48);
+     box-shadow: 0 -12px 12px rgb(0, 0, 0),
+                inset 0 -12px 22px rgba(23, 23, 23, 0.836),
+                0 12px 12px rgb(0, 0, 0),
+                inset 0 12px 12px rgba(23, 23, 23, 0.836);
+    position: relative;
+    background-image: url("https://www.freepngimg.com/thumb/clock/33735-6-clock-no-hands-clipart.png");
+    background-position: center;
+    background-color: rgb(169, 164, 164);
+   
+    border-style:unset;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 90%;
+  }
+  
+  .clock::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  
+  
+  .hour {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    height: 7px;
+    background-color: rgb(0, 0, 0);
+    transform-origin: left;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+  }
+  
+  .min{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    transform-origin: left;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+  }
+
+  .sec{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35%;
+    height: 5px;
+    background-color: rgb(244, 18, 18);
+    transform-origin: left;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+  }
+ 
+  .text{
+    text: size 20px;
+    text-align: center;
+    padding-top: 100px;
+    
+    
+  }
+  .ti{
+    text: size 20px;
+    text-align: center;
+    padding-top: 180px;
+  }

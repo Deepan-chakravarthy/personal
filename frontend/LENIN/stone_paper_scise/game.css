@@ -1,0 +1,21 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+h1{
+text-align: center;
+}
+button{
+    margin: 4%;
+}
+
+img{
+    height: 30vh;
+}
+
+p{
+    text-align: center;
+    font-size: 2rem ;
+}

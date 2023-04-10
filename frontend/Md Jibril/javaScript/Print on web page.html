@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icon\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Print on web style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Assignment</h1>
+    <!-- reverse the given Number -->
+    <section class="sec set-1">
+      <div class="box cal_1">
+        <h2>Reverse The Given Number</h2>
+        <label>Enter the Number :</label>
+        <input type="number"  id="r_num" />
+        <button onclick="reverse_num()">Reverse</button><br />
+        <label>Result: </label><input id="r_num_result" />
+      </div>
+      <!-- Reverse the given word  -->
+      <div class="box cal_2">
+        <h2>Reverse the given String</h2>
+        <label>Enter the Word : </label><input id="r_str" />
+        <button onclick="reverse_s()">Reverse</button><br />
+        <label>Result: </label><input id="r_str_result" />
+      </div>
+    </section>
+    <section class="sec set-2">
+      <div class="box">
+        <h2>Count the Vowels</h2>
+        <label>Enter The Sentance:</label><input id="cv_str" />
+        <button onclick="count_vowels()">Count Vowels</button><br />
+        <label>Result: </label><input id="cv_result" />
+      </div>
+      <div class="box">
+        <h2>Each Word First Letter Capital</h2>
+        <label>Enter The Sentance:</label><input id="cl_str" />
+        <button onclick="capital()">Capitalize</button><br />
+        <label>Result: </label><input id="cl_result" />
+      </div>
+    </section>
+  </section>
+  <section class="sec set-3">
+    <div class="box">
+      <h2>Show today date</h2>
+      <select id="date_formet">
+        <option>--formet--</option>
+        <option>dd/mm/yyyy</option>
+        <option>mm/dd/yyyy</option>
+        <option>dd-mm-yyyy</option>
+        <option>mm-dd-yyyy</option>
+      </select>
+      <button onclick="date_()" id="btn">click me</button>
+      <input id="show"><br>
+    </div>
+    <div>
+<input type="date" name="t_date" id="t_date">
+<button onclick="cal_date()" id="cal-days">find</button>
+<input type="text" name="res" id="Res">
+
+
+
+    </div>
+    <!-- <div><form action="#">
+      <input type="text" name="txt" onkeypress="handle(event)" />
+  </form>
+  
+  <script>
+      function handle(e){
+          if(e.keyCode === 13){
+            
+              e.preventDefault(); // Ensure it is only this code that runs
+  
+              alert("Enter was pressed was presses");
+          }
+      }
+  </script></div>  -->
+    <!-- <div class="box">
+      <h2>Each Word First Letter Capital</h2>
+      <label>Enter The Sentance:</label><input id="cl_str" />
+      <button onclick="capital()">Capitalize</button><br />
+      <label>Result: </label><input id="cl_result" />
+    </div> -->
+  </section>
+
+  </body>
+  <script src="Print on web script.js"></script>
+</html>

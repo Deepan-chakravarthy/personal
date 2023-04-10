@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    color:rgb(249, 7, 7);
+    font-style: oblique;
+}
+i{
+    color: blue;
+}
+.container{
+    background-color: black;
+    margin-top: 3em;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 30px;
+}
+table{
+    margin-left: 13%;
+}
+input{
+    border-radius:30px;
+    font-size:34px;
+    height:55px;
+    width:456px;
+    text-align: end;
+    padding: 15px;
+}
+button{
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 40px;
+    width: 102px;
+    height: 90px;
+    margin:2px;
+}
