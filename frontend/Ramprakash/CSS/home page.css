@@ -1,0 +1,55 @@
+
+
+
+.topnav a.active {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #05221b;
+    color: white;
+}
+
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    float: right;
+    color: rgb(144, 233, 191);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: rgb(149, 212, 231);
+    color: black;
+}
+
+button {
+    
+    background-color: rgb(209, 139, 160);
+    color: rgb(8, 8, 8);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 1px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 45%;
+    
+}
+
+.smallimg {
+    padding: -60px 1px;
+}
+
+button:hover {
+    
+    opacity: 40%;
+}

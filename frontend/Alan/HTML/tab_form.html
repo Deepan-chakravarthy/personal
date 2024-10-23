@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>table form </title>
+	<style>
+		
+		table,tr,th,td
+		{
+			background-color: peachpuff;
+			border: 2px solid black;
+
+			border-color: black;
+			margin-left: 35%;
+			margin-top: 10%;
+		}
+		tr,td
+		{
+			padding: 15px;
+		}
+	</style>
+</head>
+<body>
+ <div class="main">
+        <table>
+        	<form>
+            <tr >
+                <th colspan="2"><h2>User Registration</h2>
+                 <h4 style="color: red;">Required Fields</h4></th>    
+            </tr>
+            <tr>
+                <td><label for="fname">First Name:</label><br>
+                <input type ="text" id ="lname"/></td>
+
+                <td><label for="lname">Last Name:</label><br>
+            	<input type="text" id="lanme"></td>
+            </tr>
+            <tr>
+            	<td><label for="email">Email:</label><br>
+                <input type ="email" id ="email"/></td>
+                
+                <td><label for="zip">zip code:</label><br>
+            	<input type="number" id="zip"></td>
+            </tr>
+            <tr>
+            	<td colspan="2"><label for="uname">User Name:</label>
+            		<input type="text" id="uname"></td>
+            </tr>
+            <tr>
+            	<td><label for="pwd">Password:</label><br>
+                <input type ="Password" id ="pwd"/></td>
+                
+                <td><label for="re-pwd">confirm password:</label><br>
+            	<input type="password" id="re-pwd"></td>
+            </tr>
+            <tr>
+            	<td colspan="2">What technology are you insterested in ?<br>
+            		<input type="checkbox" name="java">
+            		<label for="java">Java</label>
+            		<input type="checkbox" name="ASP">
+            		<label for="ASP">ASP</label>
+            		<input type="checkbox" name="ajax">
+            		<label for="ajax">Ajax</label><br>
+            		<input type="checkbox" name="python">
+            		<label for="python">python</label>
+            		<input type="checkbox" name="kotlin">
+            		<label for="kotlin">kotlin</label>
+            		<input type="checkbox" name="C#">
+            		<label for="C#">C#</label>
+            	</td>
+            </tr>
+            <tr>
+            	<td colspan="2">Would you like to receive e-mail notifications on our special sales ?<br>
+            		<input type="radio" name="yes">
+            		<label for="yes">Yes</label>
+            		<input type="radio" name="No">
+            		<label for="No">No</label>
+            	</td>
+            </tr>
+            <tr>
+            	<td colspan="2" style="text-align: center;">
+            		<button class="submit">Submit</button>
+            		<button class="reset">Reset</button>
+            	</td>
+            </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>

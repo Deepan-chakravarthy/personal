@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="RPS_style.css" />
+    <title>Rock, Paper, Scissor</title>
+  </head>
+  <body>
+    <section id="Rock_Paper_Scissor">
+      <h1>Rock Paper Scissor Game</h1>
+      <!-- <label for="user_input">Player:</label> -->
+      <div id="user_input">
+        <button class="btn rock" onclick="game('Rock')" value="Rock">✊</button>
+        <button class="btn paper" onclick="game('Paper')" vlaue="Paper">✋</button>
+        <button class="btn Scissor" onclick="game('Scissor')" value="Scissor">✌</button>
+
+        <div class="Score-Board"></div>
+
+        <div class="result" id="display"></div>
+        <label for="play">Player-Score:</label>
+        <input class="res" placeholder="Player Score" id="play" /><br />
+        <label for="comp">Computer-Score:</label>
+        <input class="res" placeholder="Computer Score" id="com" /><br>
+        <label for="computer_dis">Computer Choice:</label>
+        <input class="res" placeholder="Computer Choice" id="computer_dis" />
+      </div>
+      <div class="set-1">
+      <div class="com_div">
+        <img src="icon/qun_mark.png" class="btn" alt="question mark" id="computer_value" />
+        </div><div>
+        <button style="font-size: 1cm" class="btn" onclick="end_game()">Finish</button>
+      </div>
+    </div>
+      <div id="final-result"></div>
+    </section>
+  </body>
+  <script src="RPS_script.js"></script>
+</html>

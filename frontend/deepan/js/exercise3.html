@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="exercise3.css">
+</head>
+<body>
+     <header>
+         <h1>HTML,CSS AND JAVASCRIPT</h1>
+     </header>
+       <marquee class="run"> HAPPY 75<sup>th</sup> INDEPENDENCE DAY</marquee>
+     <div class="main">
+         <h2>To Reverse Number</h2>
+         <div>
+              <label for="Enter Number:">Enter Number:</label> <input type="number" id="num">
+              <h3> Answer: <span id="r_num"> </span> </h3>
+         </div>
+     </div>
+
+     <div class="main">
+        <h2>To Reverse String</h2>
+        <div>
+             <label> Enter string: </label> <input type="text" id="string" onkeypress="myfunction()"></h3>
+             <h3> Answer: <span id="r_string"> </span> </h3>
+        </div>
+    </div>
+    
+    <div class="star">
+        <div class="sub">
+            <h2>Star Pattern</h2>
+            <div>
+                <label>Enter Rows:</label> <input type="number" id="star"><br>
+                <button onclick="star()">Print</button>
+                <h3> Answer: <pre id="a_star"></pre></h3>
+                </div>
+           </div>
+
+           <div class="sub">
+            <h2>Star Pattern</h2>
+            <div>
+                <label>Enter Rows:</label> <input type="number" id="star1"><br>
+                <button onclick="star1()">Print</button>
+                <h3> Answer: <pre id="a_star1"></pre></h3>
+            </div>
+           </div>
+    </div>
+    
+    
+
+</body>
+   <script src="exercise3.js"></script>
+</html>

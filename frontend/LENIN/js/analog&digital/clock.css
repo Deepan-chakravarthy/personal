@@ -1,0 +1,185 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('../analog&digital/pink-new-background-images-hd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    margin-top: 6%;
+    margin-left: 5%;
+    border-radius: 20px;
+    border-top-left-radius: 225px;
+    border-top-right-radius: 225px;
+
+}
+
+
+/* ANALOG CLOCK-STYLE */
+.clock {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    box-shadow: 25px 25px 75px rgba(36, 171, 195, 0.75),
+        10px 50px 70px rgba(0, 0, 0, 0.25),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+    background: #3a1965;
+}
+
+.clock::before {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border: 3px solid white;
+    border-radius: 50%; 
+    content: "";
+    background: #2f363e;
+}
+
+.clock span {
+    position: absolute;
+    inset: 20px;
+    color: white;
+    text-align: center;
+    transform: rotate(calc(30deg*var(--i)));
+    /* 360/12 = 30deg (it mean total degree 360 ,12 hours calcluate = 30degree) */
+}
+
+.clock span b {
+    font-size: 1em;
+    opacity: 0.7 0;
+    font-weight: 600;
+    display: inline-block;
+    transform: rotate(calc(-30deg*var(--i)));
+}
+
+/*its define circle(class=seconds)*/
+.circle {
+    position: absolute;
+    z-index: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgba(5, 5, 5, 0.25);
+    border-radius: 50%;
+}
+
+.circle i {
+    position: absolute;
+    height: 50%;
+    width: 6px;
+    background: var(--clr);
+    opacity: 0.75;
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+}
+
+.circle:nth-child(1) i {
+    width: 2px;
+}
+
+.circle:nth-child(2) i {
+    width: 6px;
+}
+
+.circle2 {
+    z-index: 9;
+    width: 240px;
+    height: 240px;
+}
+
+.circle3 {
+    z-index: 8;
+    width: 180px;
+    height: 180px;
+}
+
+.circle::before {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: -8.5px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--clr);
+    content: "";
+    background: var(--clr);
+
+}
+
+
+/*DIGITAL-CLOCK STYLE*/
+.container-1{
+    
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: -45%;
+   margin-left: 40%;
+}
+
+.container-1 .time{
+display: flex;
+gap: 10%;
+color: white;
+}
+
+.container-1 .time .circles{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1 .time .circles svg{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    transform: rotate(270deg);
+}
+
+.container-1  svg circle{
+    fill: transparent;
+    width: 100%;
+    height: 100%;
+    stroke: #191919;
+    stroke-width: 4;
+    transform: translate(5px,5px);
+}
+
+.container-1  svg circle:nth-child(2){
+    stroke: var(--clr);
+   stroke-dasharray: 440;
+}
+/*
+.ap{
+    position: relative;
+    font: 1em;
+    transform: translateX(-20px);
+}
+*/
+.time div{
+    position: absolute;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+

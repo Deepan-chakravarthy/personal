@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+   font-size: large;
+}
+body{
+    /* background: linear-gradient(to right,navy,royalblue,lightskyblue,white); */
+    background-image: url(GROOT.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.clock{
+    /* background-color: hsl(240, 64%, 27%,0.5); */
+    background-image: url(ded.jpg);
+    background-size: cover;
+    width:400px;
+    height:400px;
+    border-radius: 50%;
+    margin-left: 70%;
+    border:solid rgb(6, 1, 1) 5px;
+    box-shadow: 8px 8px 8px 8px #adbfff;
+    position: relative;
+    margin-top:3% ;
+}
+.clock .number{
+    --rotation:0; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+     transform: rotate(var(--rotation));
+
+
+    } 
+
+
+    .number1 div{
+        color:gold;
+        transform:rotate(-30deg);
+        font-size: xx-large;
+    }
+    .number2 div{
+        color:gold;
+        transform:rotate(-60deg);
+        font-size: xx-large;
+    }
+    .number3 div{
+        color:gold;
+        transform:rotate(-90deg);
+        font-size: 300%;
+    }
+    .number4 div{
+        color:gold;
+        transform:rotate(-120deg);
+        font-size: xx-large;
+    }
+    .number5 div{
+        color:gold;
+        transform:rotate(-150deg);
+        font-size: xx-large;
+    }
+    .number6 div{
+        color:gold;
+        transform:rotate(-180deg);
+        font-size: 300%;
+    }
+    .number7 div{
+        color:gold;
+        transform:rotate(-210deg);
+        font-size: xx-large;
+    }
+    .number8 div{
+        color:gold;
+        transform:rotate(-240deg);
+        font-size: xx-large;
+    }
+    .number9 div{
+        color:gold;
+        transform:rotate(-270deg);
+        font-size: 300%;
+    }
+    .number10 div{
+        color:gold;
+        transform:rotate(-300deg);
+        font-size: xx-large;
+    }
+    .number11 div{
+        color:gold;
+        transform:rotate(-330deg);
+        font-size: xx-large;
+    }
+    .number12 div{
+        color:gold;
+        transform:rotate(-360deg);
+        font-size: 300%;
+    }
+  
+
+ /* .clock .number1{top: 5px;
+               left:65px;
+               color:white;
+               /* font-style:rotate(10deg);
+             transform: rotate(30deg);
+            background-color: black; */
+ /* } */
+  /* .p{transform: rotate(90deg);
+
+  }          */
+             
+/*.clock .number2{top: 65px;
+                left:115px;
+                color:white}
+                
+.clock .number3{ top: 120px;
+                 left:130px;
+                 color:white}
+                
+.clock .number4{ top: 183px;
+                 left:120px;
+                 color:white} */
+
+.clock .number1{ --rotation:30deg;}
+.clock .number2{ --rotation:60deg;}
+.clock .number3{ --rotation:90deg;}
+.clock .number4{ --rotation:120deg;}
+.clock .number5{ --rotation:150deg;}
+.clock .number6{ --rotation:180deg;}
+.clock .number7{ --rotation:210deg;} 
+.clock .number8{ --rotation:240deg;}
+.clock .number9{ --rotation:270deg;}
+.clock .number10{ --rotation:300deg;}
+.clock .number11{ --rotation:330deg;}
+.clock .number12{ --rotation:360deg;}
+
+.clock .hand{
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+    border: 1px white;
+  
+}
+
+.clock .hour{
+    position: absolute;
+    height: 100px;
+    width:6px;
+    background-color:gold;
+    left:50%;
+    top:100px;
+    
+    
+    border-top-left-radius:100% ;
+    border-top-right-radius:100% ;
+    /* border-bottom-left-radius:100% ;
+    border-bottom-right-radius:100% ; */
+    transform-origin: bottom;
+    z-index: 5;
+
+
+}
+.clock .minute{
+    position: absolute;
+    height: 150px;
+    width:3px;
+    background-color:gold;
+    left:50%;
+    top:50px;
+    z-index: 6;
+    border-top-left-radius:100% ;
+    border-top-right-radius:100% ;
+    /* border-bottom-left-radius:100% ;
+    border-bottom-right-radius:100% ; */
+    transform-origin: bottom;
+    
+}
+.clock .second{
+    position: absolute;
+    height: 160px;
+    width:1px;
+    background-color:gold;
+    left:50%;
+    top:40px;
+    border-top-left-radius:100% ;
+    border-top-right-radius:100% ;
+    /* border-bottom-left-radius:100% ;
+    border-bottom-right-radius:100% ; */
+    transform-origin: bottom ;
+    z-index: 7;
+   
+}
+.clock .center{
+    position: absolute;
+    height: 6%;
+    width: 6%;
+    border-radius: 50%;
+    background-color:black;
+    left:48%;
+    top:48%;
+    right:0;
+    bottom:0;
+    z-index: 10;
+    
+    
+    
+}
+
+ audio{
+    background-color: rgb(77, 0, 105);
+     position: relative;
+    border-radius: 35%;
+} 

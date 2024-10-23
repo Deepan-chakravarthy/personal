@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <h1>Stone Paper and Scissor</h1>
+    </header>
+     <h2>Choose your move</h2>
+     <div class="img">
+           <div class="img1">
+               <img src="https://c4.wallpaperflare.com/wallpaper/80/923/825/stones-sand-circle-blurred-wallpaper-preview.jpg" width="300" height="400" onclick="move1()">
+               <h2>Stone</h2>
+           </div>
+           <div class="img2">
+                <img src="https://c1.wallpaperflare.com/preview/875/216/967/table-coffee-pen-fruit.jpg" width="300" height="400" onclick="move2()">
+                <h2>Paper</h2>
+           </div>
+           <div class="img3">
+                <img src="https://c1.wallpaperflare.com/preview/635/271/803/hairdresser-scissors-barber-supplies-work.jpg" width="300" height="400" onclick="move3()">
+                <h2>Scissor</h2>
+           </div>
+     </div>
+     <div class="win">
+         <h2>Computer Turn</h2>
+         <p id="com">----</p>
+         <p id="res"><strong>Result</strong></p>
+         <h3>Score</h3>
+         <p><strong>player: <span id="pr">0</span></strong></p>
+         <p><strong>computer: <span id="cr">0</span></strong></p>
+     </div>
+    
+</body>
+<script src="project.js"></script>
+</html>

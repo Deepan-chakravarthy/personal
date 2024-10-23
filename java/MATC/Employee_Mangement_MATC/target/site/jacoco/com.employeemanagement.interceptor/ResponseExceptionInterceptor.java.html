@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ResponseExceptionInterceptor.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Employee_Mangement_MATC</a> &gt; <a href="index.source.html" class="el_package">com.employeemanagement.interceptor</a> &gt; <span class="el_source">ResponseExceptionInterceptor.java</span></div><h1>ResponseExceptionInterceptor.java</h1><pre class="source lang-java linenums">package com.employeemanagement.interceptor;
+
+import java.text.MessageFormat;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+
+import org.apache.commons.lang3.ArrayUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.MissingServletRequestParameterException;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+import com.employeemanagement.exception.BaseErrorCodes;
+import com.employeemanagement.exception.BusinessException;
+import com.employeemanagement.exception.TechnicalException;
+
+import lombok.extern.log4j.Log4j2;
+
+<span class="nc" id="L25">@Log4j2</span>
+@ControllerAdvice
+<span class="nc" id="L27">public class ResponseExceptionInterceptor {</span>
+
+	@Autowired
+	private MessageSource messageSource;
+
+	@ExceptionHandler(BusinessException.class)
+	public ResponseEntity&lt;Object&gt; handleException(BusinessException e) {
+
+<span class="nc" id="L35">		log.error(&quot;Business Exception - [{}]&quot;, e.getErrorCode(), e);</span>
+
+<span class="nc" id="L37">		Response&lt;Object&gt; response = Response.builder().status(HttpStatus.INTERNAL_SERVER_ERROR.value())</span>
+<span class="nc" id="L38">				.error(e.getErrorCode()).message(getMessage(e.getErrorCode(), e.getErrorParams())).build();</span>
+<span class="nc" id="L39">		return new ResponseEntity&lt;&gt;(response, HttpStatus.INTERNAL_SERVER_ERROR);</span>
+	}
+
+	@ExceptionHandler(TechnicalException.class)
+	public ResponseEntity&lt;Object&gt; handleException(TechnicalException e) {
+
+<span class="nc" id="L45">		log.error(&quot;Technical Exception - [{}]&quot;, e.getErrorCode(), e);</span>
+
+<span class="nc" id="L47">		Response&lt;Object&gt; response = Response.builder().status(HttpStatus.INTERNAL_SERVER_ERROR.value())</span>
+<span class="nc" id="L48">				.error(e.getErrorCode()).message(getMessage(e.getErrorCode(), null)).build();</span>
+
+<span class="nc" id="L50">		return new ResponseEntity&lt;&gt;(response, HttpStatus.INTERNAL_SERVER_ERROR);</span>
+	}
+
+	@ExceptionHandler(Exception.class)
+	public ResponseEntity&lt;Object&gt; handleException(Exception e) {
+
+<span class="nc" id="L56">		log.error(&quot;General Exception&quot;, e);</span>
+
+<span class="nc" id="L58">		Response&lt;Object&gt; response = Response.builder().status(HttpStatus.INTERNAL_SERVER_ERROR.value())</span>
+<span class="nc" id="L59">				.error(BaseErrorCodes.GENERAL_EXCEPTION.name())</span>
+<span class="nc" id="L60">				.message(getMessage(BaseErrorCodes.GENERAL_EXCEPTION.name(), null)).build();</span>
+
+<span class="nc" id="L62">		return new ResponseEntity&lt;&gt;(response, HttpStatus.INTERNAL_SERVER_ERROR);</span>
+	}
+
+	@ExceptionHandler(MissingServletRequestParameterException.class)
+	public ResponseEntity&lt;Object&gt; handleValidationException(MissingServletRequestParameterException e) {
+
+<span class="nc" id="L68">		log.error(&quot;Validation Exception&quot;, e);</span>
+
+<span class="nc" id="L70">		List&lt;ResponseError&gt; responseErrors = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L71">		ResponseError responseError = ResponseError.builder().field(e.getParameterName())</span>
+<span class="nc" id="L72">				.message(getMessage(BaseErrorCodes.MISSING_MANDATORY_FIELDS.name(), null)).build();</span>
+
+<span class="nc" id="L74">		responseErrors.add(responseError);</span>
+
+<span class="nc" id="L76">		Response&lt;Object&gt; response = Response.builder().status(HttpStatus.BAD_REQUEST.value())</span>
+<span class="nc" id="L77">				.error(BaseErrorCodes.FIELDS_VALIDATION_EXCEPTION.name())</span>
+<span class="nc" id="L78">				.message(getMessage(BaseErrorCodes.FIELDS_VALIDATION_EXCEPTION.name(), null))</span>
+<span class="nc" id="L79">				.errorDetails(responseErrors).build();</span>
+
+<span class="nc" id="L81">		return new ResponseEntity&lt;&gt;(response, HttpStatus.BAD_REQUEST);</span>
+	}
+
+	@ExceptionHandler(MethodArgumentNotValidException.class)
+	public ResponseEntity&lt;Object&gt; handleValidationException(MethodArgumentNotValidException e) {
+
+<span class="nc" id="L87">		log.error(&quot;Validation Exception&quot;, e);</span>
+
+<span class="nc" id="L89">		List&lt;ResponseError&gt; responseErrors = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L90">		e.getBindingResult().getAllErrors().forEach((error) -&gt; {</span>
+<span class="nc" id="L91">			ResponseError responseError = ResponseError.builder().field(((FieldError) error).getField())</span>
+<span class="nc" id="L92">					.message(error.getDefaultMessage()).build();</span>
+
+<span class="nc" id="L94">			responseErrors.add(responseError);</span>
+<span class="nc" id="L95">		});</span>
+
+<span class="nc" id="L97">		Response&lt;Object&gt; response = Response.builder().status(HttpStatus.BAD_REQUEST.value())</span>
+<span class="nc" id="L98">				.error(BaseErrorCodes.FIELDS_VALIDATION_EXCEPTION.name())</span>
+<span class="nc" id="L99">				.message(getMessage(BaseErrorCodes.FIELDS_VALIDATION_EXCEPTION.name(), null))</span>
+<span class="nc" id="L100">				.errorDetails(responseErrors).build();</span>
+
+<span class="nc" id="L102">		return new ResponseEntity&lt;&gt;(response, HttpStatus.BAD_REQUEST);</span>
+	}
+
+	private String getMessage(String code, String[] errorParams) {
+		String message;
+		try {
+<span class="nc" id="L108">			message = messageSource.getMessage(code, null, Locale.ENGLISH);</span>
+<span class="nc bnc" id="L109" title="All 2 branches missed.">			if (!ArrayUtils.isEmpty(errorParams)) {</span>
+<span class="nc" id="L110">				message = MessageFormat.format(message, errorParams);</span>
+			}
+<span class="nc" id="L112">		} catch (Exception e) {</span>
+<span class="nc" id="L113">			log.warn(&quot;Error code [{}] not found. Default to GENERAL_EXCEPTION.&quot;, code);</span>
+<span class="nc" id="L114">			message = messageSource.getMessage(BaseErrorCodes.GENERAL_EXCEPTION.name(), null, Locale.ENGLISH);</span>
+<span class="nc" id="L115">		}</span>
+<span class="nc" id="L116">		return message;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

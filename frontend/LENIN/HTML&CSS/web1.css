@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    background-image: url('../media/image/photoshop/background/wp2104037.jpg');
+    background-size: cover;
+    height: 100vh;
+   
+}
+
+
+img {
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+nav {
+    height: 70px;
+   
+
+}
+
+ul {
+    list-style-type: none;
+    margin-right: 3%;
+    margin-top: 2%;
+    float: right;
+    
+
+}
+
+li {
+    float: left;
+    padding-left: 7px;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    font-family: Acme;
+}
+
+li a:hover {
+
+    box-sizing: 6px;
+    box-shadow: 0 0 5px #33f5ff, 0 0 5px #33f5ff;
+    transition: 0.8s;
+
+}
+
+
+
+li a:hover:not(.active) {
+    box-sizing: 6px;
+    box-shadow: 0 0 5px #6dff33, 0 0 5px #6dff33;
+
+}
+
+.active {
+    box-sizing: 6px;
+    box-shadow: 0 0 5px #33f5ff, 0 0 5px #33f5ff;
+}
+
+li .dropdown {
+    display: inline-block;
+
+}
+
+.dropdown-button {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    top: 70px;
+    position: absolute;
+    background-color: #6441A5;
+    width: 104px;
+
+
+
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 5px 5px;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+h2 {
+    text-align: center;
+    color: #007d84;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    margin: 50px auto;
+    background-image: linear-gradient(to right,#E6DADA,#274046);
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+
+
+.card {
+    width: 30%;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+
+}
+
+.card-header {
+    text-align: center;
+    padding: 20px 50px;
+    background: linear-gradient(to right, #ADD100, #7B920A);
+    color: white;
+}
+
+.card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card-body .btn {
+    background: linear-gradient(to right, #7B920A, #ADD100);
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 10px 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(red, green, blue, 0.25);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+p {
+    text-align: justify;
+}

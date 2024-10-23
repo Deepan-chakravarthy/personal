@@ -1,0 +1,29 @@
+#wrapper {
+	width: 650px;
+    height: 250px;
+	margin:  auto;
+}
+
+#content {
+	background-image: url(https://img.freepik.com/free-vector/watercolor-nature-background-with-leaves_52683-59449.jpg?w=2000);
+	background-size: cover;
+	text-align: center;
+	overflow: auto;
+	height: 400px;
+	width: 600px;
+	/* position: relative; */
+	margin: 95px 15px 25px 15px;
+	 padding: 10px;
+	
+}
+
+.button1 {
+    
+    background-color:#2a2ace;
+}
+
+h2{
+    text-align: center;
+    margin: 35px 15px 25px 15px;
+    background-color:#8181f1;
+}

@@ -1,0 +1,96 @@
+body {
+    background-image: linear-gradient(to right, #1eff00, #4fa9aa);
+    background-size: cover;
+}
+
+img {
+    position: absolute;
+    width: 20%;
+    height: 45%;
+    margin-left: 6%;
+    margin-top: 2%;
+}
+
+.welcome {
+    position: absolute;
+    font-family: Bungee Inline;
+    color: rgb(207, 101, 101);
+    margin-left: 9%;
+    margin-top: 24%;
+    font-size: 2em;
+}
+.content {
+    position: absolute;
+    font-family: Condiment;
+    color: rgb(235, 161, 161);
+    margin-left: 10%;
+    margin-top: 31%;
+    text-align: center;
+    
+}
+div {
+    position: absolute;
+    width: 870px;
+    height: 650px;
+    background-color: rgb(204, 243, 207);
+    display: inline-block;
+}
+
+.square1 {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 40%;
+    border-radius: 18em / 18em;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+h1 {
+    background-clip: border-box;
+    /* text gradient background is must of background-clip  */
+    margin-top: 10%;
+    margin-left: 33%;
+    background: -webkit-linear-gradient(#bbf4e4, #6f5ef1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input_field_1R_1C {
+    width: 25%;
+    padding: 10px 13px;
+
+    margin-left: 10%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.square1 button {
+    cursor: pointer;
+    background-color: white;
+    border: #2201b5 2px solid;
+    margin-left: 40%;
+    border-radius: 20px;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #07939b;
+    color: white;
+}
+
+button{
+    cursor: pointer;
+    background-color: white;
+    border: #2201b5 2px solid;
+    margin-left: 1%;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-align: bottom;
+    text-decoration: none;
+    font-size: 1rem;
+} 

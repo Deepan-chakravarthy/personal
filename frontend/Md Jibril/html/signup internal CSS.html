@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New User Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../javaScript/icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 2cm;
+      }
+
+      body {
+        background-image: url(https://ak.picdn.net/shutterstock/videos/1032398774/thumb/1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Segoe Print;
+        text-align: center;
+        vertical-align: center;
+      }
+      button {
+        color: white;
+        border: none;
+        width: 90px;
+        padding: 3px 3px;
+      }
+
+      label {
+        width: 30vh;
+        text-align: left;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="screen">
+      <h1><b>New User Signup !! </b></h1>
+      <form>
+        <p>
+          <label for="fname"> <b>First Name :</b></label>
+          <input type="text" placeholder="First Name" name="fname" required />
+        </p>
+        <p>
+          <label for="lname"><b>Last Name :</b></label>
+          <input type="text" placeholder="last Name" name="lname" required />
+        </p>
+        <p>
+          <label for="email"><b>email :</b></label>
+          <input type="email" placeholder="Enter email" name="email" required />
+        </p>
+        <p>
+          <label for="mobile"><b>Mobile Number :</b></label>
+          <input
+            type="number"
+            placeholder="Enter mobile number"
+            name="mobile"
+            required
+          />
+        </p>
+        <p>
+          <label for="dob"><b>Date of Birth :</b></label>
+          <input
+            style="width: 172px"
+            type="date"
+            placeholder="Enter DOB"
+            name="dob"
+            required
+          />
+        </p>
+
+        <button type="submit" style="background-color: green">Signin</button>
+        <button type="reset" style="background-color: red">Clear</button>
+        <button type="reset" style="background-color: blue">Back</button>
+      </form>
+    </div>
+  </body>
+</html>

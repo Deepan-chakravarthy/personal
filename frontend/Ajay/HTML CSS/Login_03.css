@@ -1,0 +1,19 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+table {
+  border-style: groove;
+  border: 3px;
+  border-color: black;
+  background-color: rgb(185, 224, 224);
+  margin-top: 2em;
+}
+p {
+  color: red;
+}

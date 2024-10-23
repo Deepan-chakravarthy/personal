@@ -1,0 +1,6 @@
+update studentss set department_name=" BCA applin" where id=7;
+update studentss set department_name=" master of CA" where id=8;
+update studentss set department_name=" BSC computer" where id=9;
+update studentss set department_name=" BSC physics" where id=10;
+update studentss set department_name=" BSC physics" where id=11;
+alter table studentss add column total bigint;

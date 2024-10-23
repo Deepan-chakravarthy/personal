@@ -1,0 +1,9 @@
+(1,'Raju kumar',17),
+ (2,'Ramesh Kumar',20),
+ (3,'Suresh Babu',18),
+ (4,'Balaji',19),
+ (5,'Kajith Raju',17),
+ (6,'Ramesh Kumar',17), 
+ (7,'Mohan Kumar',16),
+ (9,'SathyaRaj',17),
+ (10,'Rajaram Mohan',18);

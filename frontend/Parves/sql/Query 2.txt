@@ -1,0 +1,7 @@
+create a student table with id, name & age insert 10 records  in it, Write a query for selector fields to total student, major count, minor count.
+Add marks from column eng,tamil,maths,physics,chemistry.find whose has taken more marks in individual subject,over all last marks,over all first marks.Add std,sec column 12th a,b,c,d four classes who all passed in physics
+------------
+select count(student_name)from table name,
+select max(count) from tablename,
+select min(count)from tablename,
+select name max(mark)from table.

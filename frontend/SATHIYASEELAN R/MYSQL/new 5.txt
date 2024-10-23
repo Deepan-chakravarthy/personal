@@ -1,0 +1,18 @@
+insert into  students (college_id,college_name,college_code,
+college_door_no,college_contact_no,college_street,college_area ,college_district ,college_pincode,
+college_state ,university_name) values(1,'SVM','S167',278,7887675643,'svm street','kaatteri','krishnagiri',636345,'Tamilnadu','Autonomous'),
+(2,'SGH','H222',308,9750476653,'sgh street','thirupathoor','krishnagiri',636340,'Tamilnadu','yx university'),
+(3,'SNJ','B444',789,8608454532,'snj street','tirchy','tirchy',646340,'Tamilnadu','xy university'),
+(4,'GVT','A112',789,7656432121,'vathi street','salem','salem',646342,'Tamilnadu','periyar university'),
+(5,'BSF','B412',789,9878654321,'NMJ street','Erode','Erode',646342,'Tamilnadu','Bharathiyar university'),
+
+
+create table Bus (bus_id int,bus_no varchar(10),name varchar(20),bus_starting_point varchar(20),bus_Alat_point varchar(20));
+insert into Bus (bus_id,bus_no,name,bus_starting_point,bus_Alat_point) values (1,'22B','sanmugam','krishnagiri','salem'),
+(2,'11A','premam','krishnagiri','Erode'),
+(3,'13','vikram','krishnagiri','Erode'),
+(4,'15','corona','krishnagiri','Erode'),
+(5,'12','virius','krishnagiri','salem');
+
+select * from college as clu inner join students as stu on clu.college_id=stu.college_id ;
+select * from(select * from college as clu inner join students as stu on clu.college_id=stu.college_id) as tol inner join Bus as B on tol

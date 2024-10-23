@@ -1,0 +1,263 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(images/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    color: white;
+    font-size: 50pt;
+    text-align: center;
+}
+.Menu-bar{
+    text-align: right;
+}
+.Menu-bar ul{
+    font-size: 15pt;
+    display: inline-flex;
+    list-style-type: none;
+}
+.Menu-bar ul li{
+    text-align: center;
+    width:100px;
+    margin: px;
+    padding: 0px;
+    /*background: red;*/
+}
+.Menu-bar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.Menu-bar ul li a:hover{
+    background: grey;
+    opacity: 30%;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .2s;
+}
+.txt{
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    color: white;
+}
+.Click-here{
+    font-size: 15pt;
+    margin-top: 10px;;
+    margin-left: 350px;
+    margin-right: 250px;
+    width:150px;
+    border: 2px solid rgb(255, 255, 255);
+}
+.Click-here a{
+    text-decoration: none;
+    color:white;
+}
+.Click-here:hover{
+    background:  rgb(153, 153, 153);
+    transition: .08s;
+}
+.Img-B{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0.5%;
+    /*border: 5px solid white;*/
+    width:1325px;
+    height:500pxpx;
+    justify-content: space-between;
+}
+.Box1,.Box2,.Box3{
+    text-align: center;
+    background:red;
+    height: 300px;
+    width: 350px;
+    margin: 2%;
+    border-radius: 15%;
+}
+/*.Img-1,.Img-2,.Img-3{
+    text-align: center;
+}*/
+.Img-B .Box1 .txt1{
+    margin-top: 80px;
+    background:rgb(201, 201, 201,0.2);
+    border-radius: 0px 30px 0px 30px;
+    color: white;
+}
+.Img-B .Box2 .txt1{
+    margin-top: 80px;
+    background:rgb(201, 201, 201,0.2);
+    border-radius: 0px 30px 0px 30px;
+    color: white;
+}
+.Img-B .Box3 .txt1{
+    margin-top: 80px;
+    background:rgb(201, 201, 201,0.2);
+    border-radius: 0px 30px 0px 30px;
+    color: white;
+}
+.Box1{
+    background-image: url("Images/11.jpg");
+    background-size: 350px 450px;
+    background-position: center;
+}
+.Box2{
+    background-image: url("Images/12.jpg");
+    background-size: 250px 350px;
+    background-position: center;
+}
+.Box3{
+    margin-left: 30px;
+    background-image: url("Images/13.jpg");
+    background-size: 550px 350px;
+    background-position: center;
+}
+.Img-B .Box1 a{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15pt;
+    border: 2px solid rgb(255, 255, 255);
+    color:rgb(255, 255, 255)
+}
+.Img-B .Box2 a{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15pt;
+    border: 2px solid rgb(255, 255, 255);
+    color:rgb(255, 255, 255)
+}
+.Img-B .Box3 a{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15pt;
+    border: 2px solid rgb(255, 255, 255);
+    color:rgb(255, 255, 255)
+}
+
+.logo{
+    color: white;
+    float: left;
+    margin:1%
+}
+.Box1:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(red, green, blue, 0.25);
+}
+.Box2:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(red, green, blue, 0.25);
+}
+.Box3:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(red, green, blue, 0.25);
+}
+.Comment{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0.5%;
+    border: 5px solid white;
+    width:px;
+    height:500pxpx;
+    justify-content: space-between;
+}
+.Img-A{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0.5%;
+    /*border: 5px solid white;*/
+    width:1325px;
+    height:500pxpx;
+    justify-content: space-between;
+}
+.Img-C{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 1%;
+    /*border: 5px solid white;*/
+    background-blend-mode:lighten;
+    width:1325px;
+    height:250px;
+    justify-content: space-evenly
+    ;
+}
+.Img-C .Box4,.Box5{
+    background:white;
+    text-align: right;
+    height: 200px;
+    width: 500px;
+    border-radius: 150px;
+}
+.Img-C .Box4{
+    background-image: url(images/14.jpg);
+    background-size: 150px 250px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.Img-C .Box5{
+    background-image: url(images/15.jpg);
+    background-size: 150px 250px;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.button:hover{
+    background:  rgb(153, 153, 153);
+    transition: .08s;   
+}
+.Registration{
+    align-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 30%;
+    color: white;
+    height: 200px;
+    width: 600px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    text-align: left;
+    background:gray
+}
+.Registration .form{
+    padding:2%
+}
+.txt2{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+div .logo1{
+    height: 50%;
+    width: 50%;
+    margin-left: 50%;
+    background-image: url(logo/logo1.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+}
+.feedback{
+    font-size: 12pt;
+    background:rgb(201, 201, 201,0.2);
+}
+button{
+    margin-top: 60%;
+    margin-left: -80%;
+}
+.media{
+    display: flex;
+    width: 100px;
+    margin-top: 13%;
+    margin-left: -24%;
+    justify-content: space-between;
+}
+.media i{
+    font-size: 15pt;
+    padding: 5%;
+}
+.media .facebook{
+    color: darkblue;
+}
+.media .youtube{
+    color: red;
+}
+.media .twitter{
+    color: lightblue;
+}

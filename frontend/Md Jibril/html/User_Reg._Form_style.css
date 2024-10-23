@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.user_reg {
+  width: 500px;
+  padding: 5% 5%;
+  margin: 40px 370px;
+}
+.heading {
+  padding: 20px 30px;
+  background-color: skyblue;
+  border-radius: 15px 15px 0px 0px;
+  text-align: center;
+  font-size: 22px;
+}
+.heading p {
+  font-size: large;
+  padding: 5px;
+}
+table {
+  width: 500px;
+  padding-inline: 10%;
+  padding-bottom: 5%;
+  background-color: skyblue;
+  border-radius: 0px 0px 15px 15px;
+}
+.tbl {
+  margin: 5px 1px;
+  padding: 5px;
+}
+.sbox {
+  width: 158px;
+}
+.lbox {
+  width: 358px;
+}
+.b1 {
+  color: #ffffff;
+  background-color: blue;
+  margin-left: 5px;
+}

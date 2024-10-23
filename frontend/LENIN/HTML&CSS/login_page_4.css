@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee Inline');
+@import url('https://fonts.googleapis.com/css?family=Condiment');
+
+body {
+    background-image: linear-gradient(to right, #fc00ff, #00dbde);
+    background-size: cover;
+}
+
+img {
+    position: absolute;
+    width: 20%;
+    height: 45%;
+    margin-left: 6%;
+    margin-top: 2%;
+}
+
+.welcome {
+    position: absolute;
+    font-family: Bungee Inline;
+    color: white;
+    margin-left: 9%;
+    margin-top: 24%;
+    font-size: 2em;
+}
+.content {
+    position: absolute;
+    font-family: Condiment;
+    color: white;
+    margin-left: 10%;
+    margin-top: 31%;
+    text-align: center;
+    
+}
+div {
+    position: absolute;
+    width: 670px;
+    height: 500px;
+    background-color: white;
+    display: inline-block;
+}
+
+.square1 {
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 35%;
+    border-radius: 12em / 12em;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+h1 {
+    background-clip: border-box;
+    /*text gradient background is must of background-clip */
+    margin-top: 8%;
+    margin-left: 33%;
+    background: -webkit-linear-gradient(#34c29a, #061700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input_field_1R_1C {
+    width: 35%;
+    padding: 10px 13px;
+
+    margin-left: 10%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    background-color: white;
+    border: #06dee9 2px solid;
+    margin-left: 40%;
+    border-radius: 20px;
+    padding: 10px 60px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #07939b;
+    color: white;
+}

@@ -1,0 +1,32 @@
+#wrapper {
+	width: 600px;
+	margin: 0 auto;
+}
+
+#content {
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9VA2BVZu_bAjzAyNlUL4n4rs8qms8LQALQ&usqp=CAU);
+	background-size: cover;
+	text-align: center;
+	overflow: auto;
+	height: 400px;
+	width: 600px;
+	/* position: relative; */
+	margin: 95px 15px 25px 15px;
+	 padding: 10px;
+	
+}
+
+
+.gender{
+    
+    margin-left: auto;
+  margin-right: 90px; 
+    padding: 2px;
+
+}
+.button1{
+    border-radius: 25%;
+    background-color: #6e6ed9;
+    padding: 5px;
+     
+}

@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image:url("./bg\ sps.jpg");
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1{
+    
+    color: gold;
+    font-weight: 800;
+    margin: 15px 0;
+}
+.container{
+    display: flex;
+}
+.container .section{
+    width: 350px;
+    margin: 20px 50px;
+}
+.section .info{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.info span , .info h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px 10px;
+    font-family: sans-serif;
+    color: rgb(198, 236, 92);
+}
+.show{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background : rgb(41, 3, 71);
+    border-radius: 20%;
+    
+    height: 200px;
+    
+    
+
+    
+}
+.show i{
+    font-size: 100px;
+    color: rgb(224, 216, 97);
+}
+h2{
+    background-color: black;
+    color: gold;
+    font-weight: bold;
+    padding: 5px;
+}
+.selection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 100px;
+}
+.selection button{
+    margin: 0 20px;
+    padding: 25px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background : rgb(45, 7, 53);
+    font-size: 33px;
+    color: rgb(245, 234, 81);
+}

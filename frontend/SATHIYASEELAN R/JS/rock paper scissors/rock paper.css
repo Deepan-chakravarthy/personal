@@ -1,0 +1,46 @@
+.container{
+    background-image: linear-gradient(to left bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 2em;
+    width: 70ch;
+    height: 60vh;
+    align-self: center;
+    text-align: center;
+}
+.headline{
+    background: linear-gradient(to right, #00f260,#f79d00,#0575E6,#64f38c);
+    background-clip: text;
+    background-size: 100em;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    animation: moveBg 2s infinite alternate-reverse;
+    color:transparent;
+    padding-top: 1em;
+    font-size: 3rem;
+    }
+    @keyframes moveBg {
+        from{
+            background-position: 0% ;
+        }
+        to{
+            background-position: 100% ;
+        }
+    }
+.button{
+    margin-bottom: 5%;
+    font-size: 20px;
+    color:black;
+    background-color: rgb(245, 249, 249);
+    padding: 5px 15px;
+    border-radius: 12px;
+    font-weight:600;
+    padding-bottom: 0.5ch;
+    transition: 100ms;
+    margin-left: 1em;
+}
+.button:hover{
+    background-color: black;
+    color:white;
+    transform: scale(1.3);}
+

@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+  justify-items: center;
+  font-family: "Edu TAS Beginner", cursive;
+  font-family: "Oleo Script", cursive;
+}
+
+.form {
+  background-color: aquamarine;
+  border-style: groove;
+  border-color: rgba(54, 213, 252, 0.801);
+  border: 5px;
+  padding: 20px;
+  margin-top: 5em;
+}

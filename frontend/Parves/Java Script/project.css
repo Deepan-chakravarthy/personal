@@ -1,0 +1,41 @@
+header{
+    text-align: center;
+    color:rgb(137, 241, 63);
+    font-style: oblique;
+    text-decoration:underline;
+}
+body{
+    background-color: rgb(6, 81, 106);
+}
+h2{
+    text-align: center;
+    margin: 2em;
+    margin-bottom: 0%;
+    font-style: oblique;
+    color: bisque;
+}
+.img{
+    display: flex;
+    margin-left: 7%;
+}
+.img1,.img2,.img3{
+    margin: 2em;
+}
+img{
+    border-radius: 10%;
+}
+.win{
+    text-align: center;
+    margin-top: 0%;
+    background-color: chocolate;
+}
+.win h3{
+     text-decoration: underline;
+     color: rgb(112, 194, 236);
+}
+#res{
+    color:rgb(242, 97, 220);
+}
+#com{
+    color: rgb(75, 235, 113);
+}

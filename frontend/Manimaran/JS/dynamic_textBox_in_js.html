@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynomic TextBox In JS</title>
+</head>
+<body>
+    <div id="box">
+        <input type="text">
+        <button id="btn">Add More</button>
+
+    </div>
+
+    <script>
+        var btn=document.querySelector("#btn");
+        btn.onclick=function(){
+            var div=document.createElement("div");
+            div.innerHTML=generateit();
+            document.getElementById("box").appendChild(div);
+        } 
+        function generateit()
+        {
+            return"<input type='text'><button onclick='removeit(this)'>Remove</button>";
+        }
+        function removeit(btn)
+        {
+            document.getElementById("box").removeChild(btn.parentNode);
+        }
+    </script>
+</body>
+</html>

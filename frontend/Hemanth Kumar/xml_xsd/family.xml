@@ -1,0 +1,21 @@
+<family>
+   <parent two='head'>
+   <father_name>kumar</father_name>
+   <age>23</age>
+   <place>uthangaraai</place>
+</parent>
+
+
+    <parent one='head'>
+	<mother_name>janani</mother_name>
+	<age>34</age>
+	<place>tirupattur</place>
+</parent>
+
+
+    <parent one='head'>
+	<mother_name>pooja</mother_name>
+	<age>30</age>
+	<place>vellore</place>
+</parent>
+</family>

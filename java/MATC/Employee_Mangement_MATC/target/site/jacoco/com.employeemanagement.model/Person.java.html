@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Person.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Employee_Mangement_MATC</a> &gt; <a href="index.source.html" class="el_package">com.employeemanagement.model</a> &gt; <span class="el_source">Person.java</span></div><h1>Person.java</h1><pre class="source lang-java linenums">package com.employeemanagement.model;
+
+import java.time.LocalDate;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+
+import com.employeemanagement.customdatatypes.Gender;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+<span class="pc bnc" id="L22" title="All 62 branches missed.">@Data</span>
+@Entity
+<span class="nc" id="L24">@NoArgsConstructor</span>
+<span class="fc" id="L25">@AllArgsConstructor</span>
+@Table(name = &quot;person&quot;)
+public class Person {
+
+	@Id
+	@GeneratedValue(generator = &quot;uuid2&quot;)
+	@GenericGenerator(name = &quot;uuid2&quot;, strategy = &quot;uuid2&quot;)
+	@JsonIgnore
+<span class="fc" id="L33">	private String id;</span>
+
+<span class="fc" id="L35">	private String name;</span>
+
+<span class="fc" id="L37">	private Integer age;</span>
+
+<span class="fc" id="L39">	private LocalDate dob;</span>
+
+	@Enumerated(EnumType.STRING)
+<span class="fc" id="L42">	private Gender gender;</span>
+
+	@Column(unique = true)
+<span class="fc" id="L45">	private String mobile;</span>
+
+<span class="fc" id="L47">	private String qualification;</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

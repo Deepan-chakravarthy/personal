@@ -1,0 +1,57 @@
+body
+{   
+    background-image: linear-gradient(to right,red,blue
+    );
+     margin: 100px;
+      margin-top: 100px;
+       margin-bottom: 150px;
+       margin-left: 300px; 
+       margin-right:30px ;
+       
+     } 
+     div{
+        background-color: white;
+        border-radius:  200px 0px 0px 200px;
+        border-left: 30cm;
+        background: white;
+        padding: 20px; 
+        width: 1100px;
+        height: 500px; 
+        text-align: center;
+        align-content: center;
+    
+    }
+    .curve{
+    text-align: center;
+    align-items: baseline;
+    padding: 10px 13px;
+    margin-left: 10%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border: none;
+    box-sizing: border-box;
+    
+    
+    }
+    button{
+        cursor: pointer;
+        background-color: white;
+      
+        margin-left: 40%;
+        border-radius: 20px;
+        padding: 10px 60px;
+        text-align: center;
+    }
+    
+    .input{
+        width: 35%;
+        padding: 10px 13px;
+    
+        margin-left: 10%;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+   
+

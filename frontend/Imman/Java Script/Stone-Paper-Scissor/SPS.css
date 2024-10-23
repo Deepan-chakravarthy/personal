@@ -1,0 +1,84 @@
+body{
+    background-image: url(../Stone-Paper-Scissor/Image/bg/1.jpg);
+    background-size: cover;
+}
+h1{
+    text-align: center;
+}
+#user {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 350px;
+}
+#Rew{
+    margin-top:25px;
+    margin-left: 340px;
+    text-align: center;
+    height: 50px;
+    width:700px;
+    padding: 10px;
+    /* background: red; */
+}
+#inh{
+    padding: 10px;
+}
+#st1 .colorSquare1{
+    height: 200px;
+    width: 200px;
+    background: url(../Stone-Paper-Scissor/Image/-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+#st2 .colorSquare2{
+    height: 200px;
+    width: 200px;
+    background: url(../Stone-Paper-Scissor/Image/0.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+#st3 .colorSquare3{
+    height: 200px;
+    width: 200px;
+    background: url(../Stone-Paper-Scissor/Image/1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+#poi{
+    font-size: 20pt;
+}
+#Rst{
+    font-size: 15pt;
+}
+#count123{
+    padding: 5px;
+    margin-top:25px;
+    margin-left: 340px;
+    text-align: center;
+    height: 50px;
+    width:700px;
+    padding: 10px;
+    /* background: green; */
+    font-size: 15pt;
+}
+#Clear_btn{
+    margin-top:30px ;
+    margin-left: 600px;
+    text-align: center;
+    height: 30px;
+    width:200px;
+    /* background: red; */
+}
+#Clear_btn:hover{
+    background: gray,50%;
+    color: gray;
+}
+#st1:hover,#st2:hover,#st3:hover{
+    background: gold;
+    border-radius: 30px;
+    transform: scale(1.15);
+}

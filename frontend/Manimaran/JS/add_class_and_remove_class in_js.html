@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddClass and Remove Class</title>
+</head>
+<style>
+    .red{
+        color:red;
+    }
+
+    .blue{
+        color:blue;
+    }
+
+</style>
+
+<body>
+    <h1 class="red">Manimaran</h1>
+    <button>toggle Color</button>
+    <script>
+        var btn=document.querySelector("button");
+        btn.onclick=function(){
+            var title=document.querySelector("h1");
+            var cls=title.getAttribute("class");
+            if(cls=="red")
+            {
+                title.classList.remove("red");
+                title.classList.add("blue");
+            }
+            else
+            {
+                 title.classList.remove("blue");
+                title.classList.add("red");
+            }
+        }
+    </script>
+</body>
+</html>

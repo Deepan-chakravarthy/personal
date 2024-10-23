@@ -1,0 +1,171 @@
+body{
+    margin: 0%;
+}
+header{
+    background-image: url('https://wallpapercave.com/wp/GtKYRyC.jpg');
+    background-size: cover;
+    height: 600px;
+    border-radius: 8px;
+}
+.welcome{
+    text-align: center;
+    font-size: 28px;
+    color:whitesmoke;
+    padding-top: 14em;
+}
+nav{
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-left: 2em;
+    display: flex;
+}
+nav i{
+    font-size: 60px;
+    color: ghostwhite;
+}
+ul{
+    padding-left: 60em;
+    padding-bottom: 1%;
+    list-style: none;
+    display: flex;
+}
+li,a{
+    padding-top: 2%;
+    color: whitesmoke;
+    font-style: oblique;
+    font-size: large;
+    text-decoration: none;
+}
+li{
+    padding-left: 2em;
+}
+a:hover{
+    color: red;
+    cursor: all-scroll;
+    text-decoration:underline;
+}
+
+.dd a{
+    display: block;
+    font-style: italic;
+}
+a{
+    padding: 1em;
+}
+.ddc{
+    display: none;
+    background-color: black;
+    opacity: 0.5;
+}
+.ddb{
+    background-color: rgb(91, 12, 164);
+    color: whitesmoke;
+    border: none;
+    display: block;
+    opacity: 0.3;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.dd:hover .ddc{
+        display: block;
+}
+.abc{
+    margin-top: 4%;
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+    font-size: 32px;
+}
+.abc::first-letter{
+    color: red;
+}
+.abc p{
+    font-size: 24px;
+}
+.abc p::first-line{
+    color:blueviolet;
+}
+.col,.coll{
+    display: flex;
+    margin: 2em;
+    
+}
+.col1{
+    background-image: linear-gradient(to right,red,yellow);
+    border-radius: 8px;
+    margin: 2em;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition:transform .2s ;
+    cursor:not-allowed;
+}
+.col1:hover {
+        transform: scale(1.2);
+  } 
+.col2{
+    background-image: linear-gradient(to right,brown,blue);
+    border-radius: 8px;
+    margin: 2em;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition:transform .2s ;
+    opacity: 0.5;
+    cursor: grab;
+}
+.col2:hover{
+    opacity: 1;
+    box-shadow: 5px 10px lightslategrey;
+}
+.col3{
+    background-image: linear-gradient(to right,violet,green);
+    border-radius: 8px;
+    margin: 2em;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition:transform .2s ;
+    cursor: progress;
+}
+.col3:hover{
+    transform: scale(1.2);
+}
+.img1,.img2,.img3{
+    margin: 2em;
+}
+.img2{
+    margin-left: 3em;
+
+    
+}
+.img3{
+    margin-left: 3.5em;
+}
+img{
+    border-radius: 50%;
+    position: relative;
+    
+}
+footer{
+    text-align: center;
+}
+footer a{
+     color:green;
+}
+footer i{
+    color:blue;
+    font-size: 50px;
+    padding: 0.5em;
+}
+footer i:hover{
+    color: red;
+    font-size: 75px;
+}
+
+
+
+

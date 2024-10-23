@@ -1,0 +1,91 @@
+create schema Task_5;
+use Task_5;
+
+create   table college (college_id int primary key auto_increment,
+college_name varchar(30),
+college_code varchar(20),
+college_door_no int,
+college_contact_no bigint,college_street varchar(30),
+college_area varchar(30) ,college_district varchar(30),
+college_pincode int,
+college_state varchar(30),
+university_name varchar(30));
+
+create table Drivers (driver_id int primary Key,
+name varchar(20),age int,
+cantact_no bigint,address varchar(30),
+street varchar(20),city varchar(20),
+pincode int,shift int,
+bus_no varchar(10));
+
+create table Bus (bus_id int primary key,
+bus_no varchar(10),name varchar(20),
+bus_starting_point varchar(20),
+bus_Alat_point varchar(20),
+driver_id int,
+foreign key(driver_id) references Drivers(driver_id));
+
+
+create table students (students_id int primary key auto_increment,
+name varchar(20),
+age int,
+Email_id varchar(20),
+mobile_no bigint,
+street varchar(30),
+area varchar(20),
+city varchar(30),
+district varchar(30),
+pincode int,
+state varchar(30),
+college_id int,
+bus_id int,
+foreign key(bus_id) references Bus(bus_id),
+foreign key(college_id) references college(college_id));
+
+
+
+
+
+select * from students;
+describe students;
+alter table students modify id int primary key auto_increment;
+---------------------- college ---------------------------------------
+
+
+insert into  college (college_id,college_name,college_code,college_door_no,college_contact_no,college_street,college_area ,college_district ,college_pincode,college_state ,university_name) values(1,'SVM','S167',278,7887675643,'svm street','kaatteri','krishnagiri',636345,'Tamilnadu','Autonomous'),
+(2,'SGH','H222',308,9750476653,'sgh street','thirupathoor','krishnagiri',636340,'Tamilnadu','yx university'),
+(3,'SNJ','B444',789,8608454532,'snj street','tirchy','tirchy',646340,'Tamilnadu','xy university'),
+(4,'GVT','A112',789,7656432121,'vathi street','salem','salem',646342,'Tamilnadu','periyar university'),
+(5,'BSF','B412',789,9878654321,'NMJ street','Erode','Erode',646342,'Tamilnadu','Bharathiyar university');
+select * from college;
+alter table college modify college_id int primary key auto_increment;
+
+------------------- Drivers -------------------------------------
+-- create table Drivers (driver_id int,name varchar(20),age int,cantact_no bigint,address varchar(30),street varchar(20),city varchar(20),pincode int,shift int,bus_no varchar(10));
+insert into Drivers values (1,'Raju kumar',35,9750477877,'12th block SAI appartments','sai street','salem','6363404','1','22B'),
+ (2,'Ramesh Kumar',40,9750489870,'45th block sri appartments','sri street','dharmapuri','6463404','2','22B'),
+ (3,'Suresh Babu',42,9750433770,'VM appartments','sakthi street','trichy','6763404','1','11A'),
+ (4,'Balaji',35,8750455667,'SR appartments','kaithi street','mettur','6353404','2','11A'),
+ (5,'Kajith Raju',28,8750434321,'SAI appartments','saiyath street','erode','6463404','1','13'),
+ (6,'Gowtham Kumar',53,8765434431,'APEX appartments','jamal street','naamakkal','6363404','2','13'), 
+ (7,'Mohan Kumar',40,8956743321,'SATHI appartments','kayal street','bhavani','6963404','1','15'),
+ (8,'Raj Kumar',45,8956843321,'DMT appartments','karma street','chennai','6965504','2','15'),
+ (9,'SathyaRaj',38,9760455330,'TNT appartments','vandumurugan street','salem','6864504','1','12B'),
+ (10,'Rajaram Mohan',42,8767544,'DNS appartments','dubakkoor street','chennai','6968504','2','12B');
+ select * from Drivers;
+ ---------------------------------- BUS -----------------------------------------
+ 
+insert into Bus (bus_id,bus_no,name,bus_starting_point,bus_Alat_point,driver_id) values (1,'22B','sanmugam','krishnagiri','salem',1),
+(2,'22B','sanmugam','krishnagiri','salem',2),
+(3,'11A','premam','krishnagiri','Erode',3),
+(4,'11A','premam','krishnagiri','Erode',4),
+(5,'13','vikram','krishnagiri','Erode',5),
+(6,'13','vikram','krishnagiri','Erode',6),
+(7,'15','corona','krishnagiri','Erode',8),
+(8,'12B','virius','krishnagiri','salem',10),
+(9,'12B','virius','krishnagiri','salem',9),
+(10,'15','corona','krishnagiri','Erode',7);
+select* from Bus;-------------------------------------------------------------------
+
+alter table students add foreign key(college_id) references college(college_id);
+ 

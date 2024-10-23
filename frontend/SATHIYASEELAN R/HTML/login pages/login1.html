@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login1.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table cellpadding=2
+    cellspacing=1 >
+      <th colspan="2">
+        <h1>User Registration</h1><h6>
+        <sup>*</sup>Required Fields</h6>
+      </th>
+      <tr>
+        <td >
+          <lable>First Name*</lable><br />
+          <input type="text" spaceholder="" required />
+        </td>
+        <td>
+          <lable>Last Name*</lable><br />
+          <input type="text" spaceholder="" required />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <lable>E-Mail*</lable><br />
+          <input type="email" spaceholder="" required />
+        </td>
+        <td>
+          <lable>Zip Code*</lable><br />
+          <input type="number" spaceholder="" required />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <lable>User Name*</lable><br />
+          <input type="text" spaceholder="" required />
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <lable>Password*</lable><br />
+            <input type="password" spaceholder="" required />
+          </td>
+          <td>
+            <lable>Confirm Password*</lable><br />
+            <input type="password" spaceholder="" required />
+          </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          What Technology are you interested in?<br>
+          <div class="i1">
+          <lable><input type="checkbox">Java</lable>&nbsp;
+          <lable><input type="checkbox">JSP</lable>
+          <lable><input type="checkbox">Struts 1.1</lable>
+          </div><div class="i2">
+          <lable><input type="checkbox">Ajax</lable>
+          <lable><input type="checkbox">Struts 2.0</lable>
+          <lable> <input type="checkbox">Servlets</lable>
+        </div></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          Would you like to receive e-mail notifications on our special sales<br>
+          <lable><input type="radio" name="in" id="Yes" value="yes" />Yes</lable>
+          <lable><input type="radio" name="in" id="No" value="NO" />No</lable>
+        </td >
+        <tr>
+            <td align=center colspan="2">
+              <button>Submit</button>
+              <button>Reset</button>
+            </td>
+          </tr>
+      </tr>
+    </table>
+  </body>
+</html>

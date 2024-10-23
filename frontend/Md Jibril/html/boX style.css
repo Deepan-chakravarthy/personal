@@ -1,0 +1,87 @@
+ul {
+  margin-left: 110vh;
+  list-style: none;
+  display: flex;
+  padding: 4px;
+  text-align: right;
+  border-radius: 20px;
+}
+ul li {
+  color: white;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: blue;
+  border-radius: 20px;
+}
+body {
+  display: flex;
+  background-color: blue;
+}
+input,
+#select_drop {
+  padding: 7px;
+  margin: 7px;
+}
+.data {
+  margin-left: 40vh;
+}
+.b1 {
+  color: white;
+  margin-left: 60px;
+  background-color: blue;
+  border: none;
+  padding: 5px;
+  width: 15vh;
+}
+.b2 {
+  color: blue;
+  margin-left: 12vh;
+  background-color: white;
+  border-radius: 30px;
+  border: none;
+  padding: 5px;
+  width: 15vh;
+}
+#lside {
+  margin-top: 10%;
+  width: 250px;
+  margin-left: 5vh;
+}
+.main {
+  display: inline-flex;
+}
+#apply {
+  font-size: 6vh;
+  display: inline-block;
+  width: fit-content;
+  /* margin-top: 1vh; */
+  margin-left: 40vh;
+}
+#wel {
+  font-size: 7vh;
+  display: inline-block;
+  width: fit-content;
+  margin-top: 3vh;
+  margin-left: 5vh;
+}
+#box {
+  box-sizing: border-box;
+  /* transition: 0.5s; */
+  width: 140vh;
+  height: 75vh;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 1vh;
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+}
+.line {
+  margin-left: 1px;
+  text-align: center;
+}
+#img1 {
+  margin-left: 10vh;
+  width: 20vh;
+}

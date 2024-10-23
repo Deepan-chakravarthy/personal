@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+input{
+ width: 9cm;
+ height: 30px;
+margin-right: 20px;
+background-color: burlywood;
+ border: 2px solid black; 
+ padding: 25px;
+ font-size: 40px;
+ text-align: right;
+ border-radius: 25px;
+}
+.btn.equal{
+background-color: green;
+}
+.btn.equal:hover{
+    color:white;
+    background-color: orangered;
+}
+.btn.operator:hover{
+    background-color: red ;
+    color: white;
+}
+.btn.clr{
+    background-color: yellow;
+}
+.container{
+    margin: auto;
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid gray;
+    background-color: skyblue;
+    width: 415px;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
+}
+tr td{
+    padding: 4px;
+}
+.btn{
+    padding: 12px;
+    background-color:black;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    color: white;
+    border: 0.5px solid black;
+    border-radius: 15px;
+
+}
+.btn:hover
+    {
+        background-color: orange;
+    }
+
+      
+    /* .btn {  
+        box-shadow: 
+          0.3em 0.3em 0 0 var(green),
+          inset 0.3em 0.3em 0 0 var(green);
+    }
+        .btn:hover,
+        .btn:focus {
+          box-shadow: 
+            0 0 0 0 var(orange),
+            inset 6em 3.5em 0 0 var(orange);
+        } */
+body{
+    background-color: brown;
+}

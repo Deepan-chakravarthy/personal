@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.sec {
+  display: flex;
+  padding: 30px;
+  margin: 10px 30px;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.box {
+  box-sizing: border-box;
+  width: 600px;
+  margin 50px;
+  padding: 10px;
+}
+.set-1{
+    background-color: red;
+}
+.set-2{
+    background-color: blue;
+}
+div{
+    background-color: #fff;
+    border: 3px solid black;
+    text-align: center;
+    margin: 20px;
+    height: 200px;
+}
+h2{
+    padding: 5px;
+}
+input{
+    padding: 4px;
+    margin: 14px 10px;
+}
+button{
+    padding: 3px;
+}
+label{
+    display: inline-block;    
+}
+#r_num::-webkit-inner-spin-button,
+#r_num::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+}

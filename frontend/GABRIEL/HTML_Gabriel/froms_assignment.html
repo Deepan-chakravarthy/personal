@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">		
+        <title>forms </title>
+
+  </head>
+  <body>
+       <form action="signupresults.html" method="GET">
+	    <div>
+            <label for="username"> USER NAME  </label> 
+		    <input type="text" name="username" id="username" maxlength="10" required> 
+		</div>	
+		<div>
+		     <label for="emailid"> EMAIL ID </label>
+		     <input type="email" name="emailid" id="emailid" required>
+		</div>
+		<div>	
+            <label for="password"> PASSWORD   </label> 
+            <input type="password" name="password" id="password"maxlength=10 required>
+        </div>	
+		<div>
+		    <label for ="date of birth">DATE OF BIRTH </label>
+		    <input type="date" name="date of birth" id="date of birth" maxlength=4 min="1900-01-01" max="2022-01-01"  required >
+		 </div>
+		 <div>
+		    <label for="tell your feedback"> tell your feedback </label>
+			<textarea name="tell your feedback" id="tell your feedback" cols="20" rows="4"
+			> write something</textarea>
+		 </div>
+		 <div>
+		<select name="state" id="state" >
+		<option value="tamil nadu"> tamil nadu </option>
+		<option value="AP"> AP </option>
+		<option value="kerala"> kerala </option>
+		</div>
+		
+		 <div>
+		  <input type="checkbox" name="sms alert" id="alert">
+
+		    <label for="SMS ALERT">SMS ALERT </label>
+		</div>
+		 <div>
+		    <input type="checkbox" name="email alert" id="alert">
+		    <label for="EMAIL ALERT">EMAIL ALERT </label>
+		   
+		</div>
+		<div>
+		    <input type="checkbox" name="agree to term" id="agree to term">
+		    <label for="agree to terms">AGREE TERMS & CONDITIONS </label>
+		    
+		</div>
+		
+		
+		<div>
+		<input type="radio" name="gender" id="male" value="male">
+		<label for="male">Male</label>
+		
+		</div>
+		<div>
+		<input type="radio" name="gender" id="female" value="female">
+		<label for="female">Female</label>
+		
+		</div>
+		<div>
+		<label type="file"> choose file </label>
+		<input type="file" id="file" name="file">
+		</div>
+		
+		<button type="submit"> SIGN UP </button>
+		<button type="reset">RESET </button>
+	
+       </form>
+  
+  
+  
+  
+  </body>
+ </html>
+ 
+ 
+ 
+ 

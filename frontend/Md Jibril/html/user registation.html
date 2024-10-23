@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../javaScript/icon/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      width: 40%;
+      margin: auto;
+      background-color: aqua;
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 9px;
+    }
+    button {
+      width: 20%;
+      margin-left: 15%;
+      margin-right: 10%;
+    }
+  </style>
+  <body>
+    <form>
+      <div class="display">
+        <table>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <h1><b>User Registration</b></h1>
+              *Required Fields
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>First Name*</b><br />
+              <input type="text" name="fname" required />
+            </td>
+            <td>
+              <b>Last Name*</b><br />
+              <input type="text" name="lname" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>E-Mail*</b><br />
+              <input type="email" name="email" required />
+            </td>
+            <td>
+              <b>Zip Code*</b><br />
+              <input type="Number" name="pin" required />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <b>User Name*</b><br />
+              <input type="text" name="uname" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Password*</b><br />
+              <input type="password" name="psw" required />
+            </td>
+            <td>
+              <b>Confirm Password*</b><br />
+              <input type="password" name="cpsw" required />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <b>What Technology are you interested in?</b><br />
+              <input type="checkbox" name="tech" value="Java" />
+              <label for="tech">Java</label>
+              <input type="checkbox" name="tech1" value="JSP" />
+              <label for="tech1">JSP</label>
+              <input type="checkbox" name="tech2" value="Struts 1.1" />
+              <label for="tech2">Struts 1.1</label><br />
+              <input type="checkbox" name="tech3" value="Ajax" />
+              <label for="tech3">Ajax</label>
+              <input type="checkbox" name="tech4" value="Struts 2.0" />
+              <label for="tech4">Struts 2.0</label>
+              <input type="checkbox" name="tech5" value="Serviets" />
+              <label for="tech5">Serviets</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>
+                Would you like to receive e-mail notifications on our special
+                sales?
+              </p>
+              <input type="radio" name="email" value="Yes" />
+              <label for="yes">Yes</label>
+              <input type="radio" name="email" value="No" />
+              <label for="no">No</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="submit">Submit</button>
+              <button typw="reset">Reset</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>

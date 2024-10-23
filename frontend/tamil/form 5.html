@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <title>form5</title>
+    <style>
+      .mo {
+        width: 50px;
+      }
+      table {
+        background-color: rgb(159, 209, 250);
+        text-align: center;
+        margin: auto;
+      }
+      td {
+        text-align: left;
+      }
+      th {
+        text-align: center;
+      }
+      a {
+        text-align: center;
+        text-decoration: none;
+      }
+      div {
+        border: 2px solid black;
+        width: 430px;
+        height: 490px;
+        /* background-color: rgb(196, 188, 178); */
+        align-items: center;
+        text-align: center;
+        margin: auto;
+      }
+      .bt {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>User from One</h2>
+      <table>
+        <tr>
+          <th>Full Name</th>
+          <td><input type="text" placeholder=" Enter your Full Name" /></td>
+        </tr>
+        <tr>
+          <th>Email Id</th>
+          <td>
+            <input type="text" placeholder=" Enter your E-Mail" name="" id="" />
+          </td>
+        </tr>
+        <tr>
+          <th>Password</th>
+          <td><input type="text" placeholder=" Enter your Password" /></td>
+        </tr>
+        <tr>
+          <th>Mobile No</th>
+          <td><input type="text" placeholder=" Enter your Mobile No" /></td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td>
+            <input type="radio" name="yes" id="" />
+            Male
+            <input type="radio" name="yes" id="" />
+            Female
+          </td>
+        </tr>
+        <tr>
+          <th>Date of Birth</th>
+          <td>
+            <input class="mo" type="month" />
+            <input
+              type="number"
+              id="date"
+              placeholder="date"
+              min="1"
+              max="31"
+            />
+            
+            <input
+              type="number"
+              id="date"
+              placeholder="year"
+              min="1980"
+              max="2020"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <th>City</th>
+          <td>
+            <select name=" chose city" id="">
+              <option value="">chennai</option>
+              <option value="">vellore</option>
+              <option value="" Sl>bangalore</option>
+              <option value="">thiruchy</option>
+              <option value="">vilupuram</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>Address</th>
+          <td>
+            <textarea
+              name=""
+              placeholder=" Enter your Address"
+              id=""
+              cols="20"
+              rows="5"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th>Pin Code</th>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th>ResumeUpload</th>
+          <td><input type="file" name="" id="" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" /> i agree with your terms and condition
+          </td>
+        </tr>
+        <tr>
+          <td class="bt" colspan="2">
+            <button class="bt1"><a href="">Resgistor</a></button>
+            <button class="bt2"><a href="">Clear from</a></button>
+            <hr color="red">
+          </td>
+        </tr>
+
+        <tr>
+          <th colspan="2">
+            <a
+              style="
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: crimson;
+              "
+              href=""
+            >
+              I have a account</a
+            >
+          </th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> getting value from dynomic TextBox In JS</title>
+</head>
+<body>
+    <div id="box">
+        <input type="text" class="txt">
+        <button id="btn">Add More</button>
+        <button id="btnResult">Result</button>
+    </div>
+
+    <script>
+        var btn=document.querySelector("#btn");
+        btn.onclick=function(){
+            var div=document.createElement("div");
+            div.innerHTML=generateit();
+            document.getElementById("box").appendChild(div);
+        }     
+          
+        var res=document.querySelector("#btnResult");
+        res.onclick=function(){
+            var x=document.querySelectorAll(".txt");
+            var tot=0;
+            for(i=0;i<x.length;i++)
+            {
+                tot=tot+Number(x[i].value);
+            }
+            alert("TOTAL :"+" " +tot);
+        }
+
+        function generateit()
+        {
+            return"<input type='text' class='txt'><button onclick='removeit(this)'>Remove</button>";
+        }
+        function removeit(btn)
+        {
+            document.getElementById("box").removeChild(btn.parentNode);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EmployeeDaoImp.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Employee_Mangement_MATC</a> &gt; <a href="index.source.html" class="el_package">com.employeemanagement.dao</a> &gt; <span class="el_source">EmployeeDaoImp.java</span></div><h1>EmployeeDaoImp.java</h1><pre class="source lang-java linenums">package com.employeemanagement.dao;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
+import org.springframework.security.core.Authentication;
+import org.springframework.stereotype.Component;
+import org.springframework.util.ObjectUtils;
+
+import com.employeemanagement.dto.AddressRequest;
+import com.employeemanagement.dto.EmployeeRequest;
+import com.employeemanagement.dto.EmployeeResponse;
+import com.employeemanagement.dto.MessageResponse;
+import com.employeemanagement.dto.PersonRequest;
+import com.employeemanagement.exception.BusinessException;
+import com.employeemanagement.model.Address;
+import com.employeemanagement.model.Employee;
+import com.employeemanagement.model.Person;
+import com.employeemanagement.repository.EmployeeMongoDBRepository;
+import com.employeemanagement.repository.EmployeeRepository;
+
+import lombok.extern.log4j.Log4j2;
+
+<span class="fc" id="L30">@Log4j2</span>
+@Component
+<span class="nc" id="L32">public class EmployeeDaoImp implements EmployeeDao {</span>
+
+	@Autowired
+	EmployeeRepository employeeRepository;
+	
+	@Autowired
+	EmployeeMongoDBRepository employeeMongoDBRepository;
+
+	@Override
+	public List&lt;Employee&gt; viewAll(Integer pageNo, Integer pageSize, String number) {
+<span class="nc" id="L42">		PageRequest paging = PageRequest.of(pageNo, pageSize, Sort.by(number));</span>
+<span class="nc" id="L43">		Page&lt;Employee&gt; pagedResult = employeeRepository.findAll(paging);</span>
+<span class="nc" id="L44">		return pagedResult.toList();</span>
+	}
+	
+	@Override
+	public MessageResponse addEmployee(EmployeeRequest employeeRequest) {
+<span class="nc" id="L49">		Employee saveEmployee = new Employee();</span>
+<span class="nc" id="L50">		BeanUtils.copyProperties(employeeRequest, saveEmployee);</span>
+<span class="nc" id="L51">		log.info(employeeRequest);</span>
+<span class="nc" id="L52">		log.info(saveEmployee);</span>
+<span class="nc" id="L53">		employeeRepository.save(saveEmployee);</span>
+<span class="nc" id="L54">		employeeMongoDBRepository.save(saveEmployee);</span>
+<span class="nc" id="L55">		log.info(&quot;Employee successfully saved - EmployeeDAO&quot;);</span>
+<span class="nc" id="L56">		return new MessageResponse(saveEmployee.getPerson().getName() + &quot; successfully saved&quot;);</span>
+	}
+
+	@Override
+	public EmployeeResponse viewByEmployeeNo(String employeeNo) {
+<span class="nc" id="L61">		EmployeeResponse getEmployee = new EmployeeResponse();</span>
+<span class="nc" id="L62">		Employee employee = employeeRepository.findByNumber(employeeNo);</span>
+<span class="nc" id="L63">		BeanUtils.copyProperties(employee, getEmployee);</span>
+<span class="nc" id="L64">		log.info(employee);</span>
+<span class="nc" id="L65">		log.info(getEmployee);</span>
+<span class="nc" id="L66">		return getEmployee;</span>
+	}
+
+	@Override
+	public EmployeeResponse viewByEmployeeNo(Authentication auth) {
+<span class="nc" id="L71">		EmployeeResponse getEmployee = new EmployeeResponse();</span>
+<span class="nc" id="L72">		String employeeNo = auth.getName();</span>
+<span class="nc" id="L73">		log.info(employeeNo);</span>
+<span class="nc" id="L74">		Employee employee = employeeRepository.findByNumber(employeeNo);</span>
+<span class="nc" id="L75">		BeanUtils.copyProperties(employee, getEmployee);</span>
+<span class="nc" id="L76">		log.info(getEmployee);</span>
+<span class="nc" id="L77">		return getEmployee;</span>
+	}
+
+	@Override
+	public List&lt;Employee&gt; viewAll() {
+<span class="nc" id="L82">		return employeeRepository.findAll();</span>
+	}
+
+	@Override
+	public MessageResponse deleteEmployee(String employeeNo) throws BusinessException {
+<span class="nc" id="L87">		Employee employee = new Employee();</span>
+		try {
+<span class="nc" id="L89">			employee = employeeRepository.findByNumber(employeeNo);</span>
+<span class="nc" id="L90">			employeeRepository.delete(employee);</span>
+<span class="nc" id="L91">			log.info(employeeNo + &quot; removed successfully&quot;);</span>
+<span class="nc" id="L92">		} catch (Exception e) {</span>
+<span class="nc" id="L93">			log.error(employeeNo + &quot; not found&quot;);</span>
+//        	throw new BusinessException(BaseErrorCodes.RECORD_NOT_FOUND.name(), BaseErrorCodes.RECORD_NOT_FOUND.message());
+<span class="nc" id="L95">			throw new BusinessException(&quot;RECORD_NOT_FOUND&quot;, &quot;RECORD_NOT_FOUND&quot;, new String[] { employeeNo });</span>
+<span class="nc" id="L96">		}</span>
+<span class="nc" id="L97">		return new MessageResponse(employeeNo + &quot; removed successfully&quot;);</span>
+	}
+
+	@Override
+	public MessageResponse updateEmployee(EmployeeRequest employeeRequest) {
+<span class="nc" id="L102">		String employeeNumber = employeeRequest.getNumber();</span>
+<span class="nc" id="L103">		Employee putEmployee = employeeRepository.findByNumber(employeeNumber);</span>
+<span class="nc bnc" id="L104" title="All 2 branches missed.">		if (!ObjectUtils.isEmpty(putEmployee)) {</span>
+<span class="nc bnc" id="L105" title="All 2 branches missed.">			if (employeeRequest.getEmail() != null) {</span>
+<span class="nc" id="L106">				putEmployee.setEmail(employeeRequest.getEmail());</span>
+			}
+<span class="nc bnc" id="L108" title="All 2 branches missed.">			if (employeeRequest.getDesignation() != null) {</span>
+<span class="nc" id="L109">				putEmployee.setDesignation(employeeRequest.getDesignation());</span>
+			}
+<span class="nc" id="L111">			putEmployee.setUpdatedDate(LocalDateTime.now());</span>
+<span class="nc" id="L112">			employeeRepository.save(putEmployee);</span>
+<span class="nc" id="L113">			log.info(employeeNumber + &quot; was updated successfully&quot;);</span>
+<span class="nc" id="L114">			return new MessageResponse(employeeNumber + &quot; was updated successfully&quot;);</span>
+		} else {
+<span class="nc" id="L116">			log.error(employeeNumber + &quot; not found&quot;);</span>
+<span class="nc" id="L117">			return new MessageResponse(employeeNumber + &quot; not found&quot;);</span>
+		}
+	}
+
+	@Override
+	public MessageResponse updateAddress(Authentication auth, AddressRequest address) {
+<span class="nc" id="L123">		String employeeNo = auth.getName();</span>
+<span class="nc" id="L124">		log.info(employeeNo);</span>
+<span class="nc" id="L125">		Employee updateEmployee = employeeRepository.findByNumber(employeeNo);</span>
+<span class="nc" id="L126">		List&lt;Address&gt; addresses = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L127">		addresses.addAll(updateEmployee.getAddress());</span>
+<span class="nc" id="L128">		addresses.stream().forEach(x -&gt; {</span>
+<span class="nc bnc" id="L129" title="All 2 branches missed.">			if (x.getType().equals(address.getType())) {</span>
+<span class="nc bnc" id="L130" title="All 2 branches missed.">				if (address.getDoorNumber() != null)</span>
+<span class="nc" id="L131">					x.setDoorNumber(address.getDoorNumber());</span>
+<span class="nc bnc" id="L132" title="All 2 branches missed.">				if (address.getStreet() != null)</span>
+<span class="nc" id="L133">					x.setStreet(address.getDistrict());</span>
+<span class="nc bnc" id="L134" title="All 2 branches missed.">				if (address.getDistrict() != null)</span>
+<span class="nc" id="L135">					x.setDistrict(address.getDistrict());</span>
+<span class="nc bnc" id="L136" title="All 2 branches missed.">				if (address.getState() != null)</span>
+<span class="nc" id="L137">					x.setState(address.getState());</span>
+<span class="nc bnc" id="L138" title="All 2 branches missed.">				if (address.getPinCode() != null)</span>
+<span class="nc" id="L139">					x.setPinCode(address.getPinCode());</span>
+			}
+<span class="nc" id="L141">		});</span>
+<span class="nc" id="L142">		updateEmployee.setAddress(addresses);</span>
+<span class="nc" id="L143">		employeeRepository.save(updateEmployee);</span>
+<span class="nc" id="L144">		log.info(employeeNo + &quot; was updated successfully&quot;);</span>
+<span class="nc" id="L145">		return new MessageResponse(employeeNo + &quot; was updated successfully&quot;);</span>
+	}
+
+	@Override
+	public MessageResponse updatePerson(Authentication auth, PersonRequest person) {
+<span class="nc" id="L150">		String employeeNo = auth.getName();</span>
+<span class="nc" id="L151">		log.info(employeeNo);</span>
+<span class="nc" id="L152">		Employee updateEmployee = employeeRepository.findByNumber(employeeNo);</span>
+<span class="nc" id="L153">        Person updatePerson = updateEmployee.getPerson();</span>
+<span class="nc bnc" id="L154" title="All 2 branches missed.">        if(person.getName() != null)</span>
+<span class="nc" id="L155">        	updatePerson.setName(person.getName());</span>
+<span class="nc bnc" id="L156" title="All 2 branches missed.">        if(person.getAge() != null)</span>
+<span class="nc" id="L157">        	updatePerson.setAge(person.getAge());</span>
+<span class="nc bnc" id="L158" title="All 2 branches missed.">        if(person.getDob() != null)</span>
+<span class="nc" id="L159">        	updatePerson.setDob(person.getDob());</span>
+<span class="nc bnc" id="L160" title="All 2 branches missed.">        if(person.getGender() != null)</span>
+<span class="nc" id="L161">        	updatePerson.setGender(person.getGender());</span>
+<span class="nc bnc" id="L162" title="All 2 branches missed.">        if(person.getMobile() != null)</span>
+<span class="nc" id="L163">        	updatePerson.setMobile(person.getMobile());</span>
+<span class="nc bnc" id="L164" title="All 2 branches missed.">        if(person.getQualification() != null)</span>
+<span class="nc" id="L165">        	updatePerson.setQualification(person.getQualification());</span>
+<span class="nc" id="L166">        updateEmployee.setPerson(updatePerson);</span>
+<span class="nc" id="L167">        employeeRepository.save(updateEmployee);</span>
+<span class="nc" id="L168">    	log.info(employeeNo + &quot; was updated successfully&quot;);</span>
+<span class="nc" id="L169">		return new MessageResponse(employeeNo + &quot; was updated successfully&quot;);</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

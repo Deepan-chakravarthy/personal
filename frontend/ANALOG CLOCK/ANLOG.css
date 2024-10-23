@@ -1,0 +1,74 @@
+body{
+    /* background-color: aquamarine; */
+    /* color: black; */
+    background-image:url("q.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-blend-mode: lighten;
+    opacity: 30px; */
+
+}
+.main {
+    display: flex;
+    /* padding: 1em;
+    height: 80vh;
+    */
+    padding: 0px 0px 0px 310px;
+    
+   
+  }
+.circle{
+    fill: none ; 
+    stroke: yellow;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+    
+}
+/* .circle  :hover{
+  background-color: blue;
+} */
+.mid-point{
+    stroke: yellow;
+    fill: red;
+}
+.hour-marks{
+    fill: none;
+    stroke:red ;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+.hour-arm {
+    fill: none;
+    stroke:red;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+  }
+  .sizing-box {
+    fill: none;
+  }
+  .minute-arm {
+    fill: none;
+    stroke: red;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+  }
+  .second-arm {
+    fill: none;
+    stroke:red;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+  }
+  #hour,
+  #minute,
+  #second {
+    transform-origin: 300px 300px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .svg{
+   background-image: url("time.jpg");
+   /* background-position-x: center; */
+   background-size: cover;
+   border-radius: 340px;
+  }
+

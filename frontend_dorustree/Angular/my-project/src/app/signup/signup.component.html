@@ -1,0 +1,46 @@
+<!-- <p>signup works!</p> -->
+<div class="signup">
+    <div class="form">
+      <h1>SIGN UP</h1>
+      <form class="signup-form" action="#">
+        <div>
+          <table>
+            <tr>
+              <td>
+                <label><b>Name</b></label>
+              </td>
+              <td>
+                <input type="text" name="username" id="uname" [(ngModel)] = "signupObj.username" required />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label><b>Email</b></label>
+              </td>
+              <td>
+                <input type="email" name="email" id="email" [(ngModel)] = "signupObj.email" required />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label><b>Enter Password</b></label>
+              </td>
+              <td>
+                <input type="password" name="Password" id="password" [(ngModel)] = "signupObj.password" required />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label><b>Confirm Password</b></label>
+              </td>
+              <td>
+                <input type="password" name="cpassword" id="cpassword" [(ngModel)] = "signupObj.cpassword" required />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </form>
+      <button (click) = "onSignup()" >Sign Up</button>
+    </div>
+  </div>
+  

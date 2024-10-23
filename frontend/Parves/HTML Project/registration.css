@@ -1,0 +1,12 @@
+.body{
+    background-color: aqua;
+}
+table, th, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 32%;
+    padding: 8px;
+  }
+  th, td {
+    background-color: aqua;
+  }
